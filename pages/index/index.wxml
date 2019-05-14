@@ -1,16 +1,95 @@
 <!--index.wxml-->
-  <view class='search'>
+<view class='search'>
 
+</view>
+<view class='hot'>
+  <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="100%" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='goods-classify'>
+  <view class='classify-list'>
+    <navigator url=''>
+      <image src='/images/system-icon/img1.png'></image>
+      <view class='classify-text'>
+        <text>手机</text>
+      </view>
+    </navigator>
   </view>
-  <view class='hot'>
-    <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
-      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
-        <swiper-item>
-          <image src="{{item}}" class="slide-image" width="100%" />
-        </swiper-item>
-      </block>
-    </swiper>
+   <view class='classify-list'>
+    <navigator url=''>
+      <image src='/images/system-icon/img2.png'></image>
+      <view class='classify-text'>
+        <text>电视</text>
+      </view>
+    </navigator>
   </view>
-  <view class='goods-classify'>
-
+   <view class='classify-list'>
+    <navigator url=''>
+      <image src='/images/system-icon/img3.png'></image>
+      <view class='classify-text'>
+        <text>电脑</text>
+      </view>
+    </navigator>
   </view>
+   <view class='classify-list'>
+    <navigator url=''>
+      <image src='/images/system-icon/img4.png'></image>
+      <view class='classify-text'>
+        <text>智能</text>
+      </view>
+    </navigator>
+  </view>
+   <view class='classify-list'>
+    <navigator url=''>
+      <image src='/images/system-icon/img5.png'></image>
+      <view class='classify-text'>
+        <text>生态链</text>
+      </view>
+    </navigator>
+  </view>
+   <view class='classify-list'>
+    <navigator url=''>
+      <image src='/images/system-icon/img6.png'></image>
+      <view class='classify-text'>
+        <text>新品</text>
+      </view>
+    </navigator>
+  </view>
+   <view class='classify-list'>
+    <navigator url=''>
+      <image src='/images/system-icon/img7.png'></image>
+      <view class='classify-text'>
+        <text>小米众筹</text>
+      </view>
+    </navigator>
+  </view>
+   <view class='classify-list'>
+    <navigator url=''>
+      <image src='/images/system-icon/img8.png'></image>
+      <view class='classify-text'>
+        <text>以旧换新</text>
+      </view>
+    </navigator>
+  </view>
+   <view class='classify-list'>
+    <navigator url=''>
+      <image src='/images/system-icon/img9.png'></image>
+      <view class='classify-text'>
+        <text>1分拼团</text>
+      </view>
+    </navigator>
+  </view>
+   <view class='classify-list'>
+    <navigator url=''>
+      <view><image src='/images/system-icon/img10.png'></image></view>
+      <view class='classify-text'>
+        <text>每日臻选</text>
+      </view>
+    </navigator>
+  </view>
+</view>

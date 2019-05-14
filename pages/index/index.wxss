@@ -3,12 +3,7 @@ page{
 background-color: #ebebeb;
 }
 view{
-  border: 1px solid;
-}
-
-image{
-  width: 100%;
-  height: 100%;
+  /* border: 1px solid; */
 }
 .search{
   height: 100rpx;
@@ -21,7 +16,26 @@ swiper-item{
   width: 100%;
   height: 100%;
 }
+swiper-item image{
+   width: 100%;
+   height: 100%;
+}
 .goods-classify{
-  height: 280rpx;
+  width: 100%;
+  height: 310rpx;
   background-color: #ffff;
+}
+.classify-list{
+  width: 150rpx;
+  height: 150rpx;
+  float: left;
+  text-align: center;
+}
+.classify-list image{
+  width: 65rpx;
+  height: 65rpx;
+  margin: 35rpx 20rpx 10rpx 20rpx;
+}
+.classify-text{
+  font-size: 25rpx;
 }

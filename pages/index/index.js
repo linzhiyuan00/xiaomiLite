@@ -10,7 +10,8 @@ Page({
       '/images/index/b3.png'
     ],
     interval: 3000,
-    duration: 800
+    duration: 800,
+    
   },
   //事件处理函数
   bindViewTap: function() {
