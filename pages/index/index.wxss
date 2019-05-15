@@ -2,15 +2,43 @@
 page{
 background-color: #ebebeb;
 }
-view{
+view{ 
   /* border: 1px solid; */
 }
 .search{
-  height: 100rpx;
-  background-color: #ff6700;
+  height: 60rpx;
+  width: 700rpx;
+  background-color: #ff6780;
+  padding: 20rpx 30rpx 20rpx 30rpx;
+}
+/* .searchmain{
+  width: 100%;
+  background-color: #ffff;
+  height: 60rpx;
+  border-radius: 30rpx;
+}
+.searchicon{
+  margin: 10rpx 200rpx;
+  text-align: center;
+}
+.searchmain image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.searchimage{
+  display: inline;
+  padding: 10rpx;
+}
+.searchtxt{
+  display: inline;
+  font-size: 30rpx;
+
+} */
+.hot{
+  height: 420rpx;
 }
 swiper{
-  height: 440rpx;
+  height: 420rpx;
 }
 swiper-item{
   width: 100%;
@@ -23,7 +51,7 @@ swiper-item image{
 .goods-classify{
   width: 100%;
   height: 310rpx;
-  background-color: #ffff;
+  background-color: #ffffff;
 }
 .classify-list{
   width: 150rpx;
@@ -38,4 +66,45 @@ swiper-item image{
 }
 .classify-text{
   font-size: 25rpx;
+}
+.hotrecommend{
+  width: 700rpx;
+  height: 900rpx;
+  margin: 25rpx 25rpx 25rpx 25rpx;
+  background-color: #ffffff;
+}
+.recommendtext{
+  width: 100%;
+  padding: 25rpx 0 25rpx 40rpx;
+  color: #666666;
+   font-weight: bold;
+}
+.recommendbig{
+  height: 460rpx;
+}
+.recommendbig image{
+  width: 100%;
+  height: 300rpx;
+}
+.goodsdetail{
+  height: 120rpx;
+  padding: 15rpx 20rpx 
+}
+.goodsname{
+  font-size: 34rpx;
+  margin-left: 8rpx;
+  margin-bottom: 10rpx;
+  color: #000000;
+}
+.goodsspecial{
+  font-size: 25rpx;
+   margin-left: 5rpx;
+  margin-bottom: 15rpx;
+  color: #999999;
+}
+.goodsprice{
+  font-size: 30rpx;
+   margin-left: 2rpx;
+  margin-bottom: 10rpx;
+  color: red;
 }
