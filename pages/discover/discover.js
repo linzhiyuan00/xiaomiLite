@@ -5,6 +5,42 @@ Page({
    * 页面的初始数据
    */
   data: {
+    head:[
+      {
+        url:'/images/discover/icon1.png',
+        name:'新品预约'
+      },
+      {
+        url: '/images/discover/icon2.png',
+        name: '活动频道'
+      },
+      {
+        url: '/images/discover/icon3.png',
+        name: '线下门店'
+      },
+    ],
+    mainbody:[
+      {
+        url:"/images/discover/img1.jpg",
+        title:'抽奖',
+        name:'小米小爱耳机 随身版 * 3'
+      },
+      {
+        url: "/images/discover/img1.jpg",
+        title: '抽奖',
+        name: '小米小爱耳机 随身版 * 2'
+      },
+      {
+        url: "/images/discover/img1.jpg",
+        title: '抽奖',
+        name: '小米小爱耳机 随身版 * 1'
+      },
+      {
+        url: "/images/discover/img1.jpg",
+        title: '专题',
+        name: '小米小爱耳机 随身版 * 10'
+      },
+    ]
 
   },
 

@@ -31,97 +31,187 @@ Page({
 
     ],
     curIndex: 0,
-    isScroll: false,
+    isScroll: true,
+    scrollanimation:true,
     toView: 'xinpin',
     clsgoods:[
       {
         title:'手机',
-        id:'shouji',
+        id:'xinpin',
         detail:[
           {
             url:'/images/classify/img1.jpg',
             name:'Redmi 7'
-          }
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
         ]
       },
       {
         title: '家电',
-        id:'jiadian',
+        id:'xinpin',
         detail: [
           {
             url: '/images/classify/img1.jpg',
             name: 'Redmi 7'
-          }
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
         ]
       },
       {
         title: '电脑',
-        id:'diannao',
+        id:'xinpin',
         detail: [
           {
             url: '/images/classify/img1.jpg',
             name: 'Redmi 7'
-          }
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
         ]
       },
       {
         title: '众筹好物',
-        id:'zhongchouhaowu',
+        id:'zhongchou',
         detail: [
           {
             url: '/images/classify/img1.jpg',
             name: 'Redmi 7'
-          }
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
         ]
       },
       {
         title: '家庭装',
-        id:'jiatingzhuang',
+        id:'zhongchou',
         detail: [
           {
             url: '/images/classify/img1.jpg',
             name: 'Redmi 7'
-          }
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
         ]
       },
       {
         title: '小米手机',
-        id:'xiaomishouji',
+        id:'shouji',
         detail: [
           {
             url: '/images/classify/img1.jpg',
             name: 'Redmi 7'
-          }
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
         ]
       },
       {
         title: '红米Redmi',
-        id:'hongmi',
+        id:'shouji',
         detail: [
           {
             url: '/images/classify/img1.jpg',
             name: 'Redmi 7'
-          }
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
         ]
       },
       {
         title: '移动4G+专区',
-        id:'yidong',
+        id:'shouji',
         detail: [
           {
             url: '/images/classify/img1.jpg',
             name: 'Redmi 7'
-          }
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
         ]
       },
       {
         title: '手机配件',
-        id:'shoujipeijian',
+        id:'shouji',
         detail: [
           {
             url: '/images/classify/img1.jpg',
             name: 'Redmi 7'
-          }
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
         ]
       },
       {
@@ -131,7 +221,698 @@ Page({
           {
             url: '/images/classify/img1.jpg',
             name: 'Redmi 7'
-          }
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+        ]
+      },
+      {
+        title: '盒子',
+        id: 'dianshi',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          
+        ]
+      },
+      {
+        title: '音箱',
+        id: 'dianshi',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '电视配件与会员',
+        id: 'dianshi',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '电脑',
+        id: 'diannao',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '电脑配件',
+        id: 'diannao',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '家电',
+        id: 'jiadian',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '厨房家电',
+        id: 'jiadian',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '路由器',
+        id: 'luyou',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '电力猫',
+        id: 'luyou',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: 'WIFI放大器',
+        id: 'luyou',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '出行',
+        id: 'chuxing',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '穿戴',
+        id: 'chuandai',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '智能',
+        id: 'zhineng',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '电源',
+        id: 'dianyuan',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '健康',
+        id: 'jiankang',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '灯具',
+        id: 'dengju',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '儿童',
+        id: 'ertong',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '插线板',
+        id: 'chaxianban',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '音频',
+        id: 'yinpin',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '箱包',
+        id: 'xiangbao',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '生活',
+        id: 'shenghuo',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '配件',
+        id: 'peijian',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '家装',
+        id: 'jiazhuang',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '礼品',
+        id: 'lipin',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
+        ]
+      },
+      {
+        title: '服务',
+        id: 'fuwu',
+        detail: [
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+          {
+            url: '/images/classify/img1.jpg',
+            name: 'Redmi 7'
+          },
+
         ]
       },
 
@@ -145,12 +926,19 @@ Page({
       curIndex: e.target.dataset.index
     })
   },
+  scroll(e) {
+    console.log(e.detail.scrollTop)
+    let index = Math.floor(e.detail.scrollTop / 500);
+    this.setData({
+      curIndex: index
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+   
   },
 
   /**
@@ -164,7 +952,10 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.setData({
+      curIndex:0,
+      toView:'xinpin'
+    })
   },
 
   /**
