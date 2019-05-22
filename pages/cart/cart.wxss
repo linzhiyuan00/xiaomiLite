@@ -1,1 +1,68 @@
 /* pages/cart/cart.wxss */
+
+page, .main {
+  height: 100%;
+  background-color: #ebebeb;
+}
+
+.kongcart {
+  height: 350rpx;
+  width: 100%;
+  /* background-color: #d4d4d4; */
+}
+
+.cart-circle {
+  position: absolute;
+  height: 250rpx;
+  width: 250rpx;
+  margin: 80rpx 250rpx 20rpx 250rpx;
+  background-color: #d4d4d4;
+  border-radius: 150rpx;
+}
+
+.carticon {
+  height: 100rpx;
+  width: 100rpx;
+  margin: 75rpx 75rpx;
+}
+
+.carticon image {
+  width: 100%;
+  height: 100%;
+}
+
+.kongtip {
+  /* position: absolute; */
+  height: 160rpx;
+  width: 100%;
+  /* background-color: #fff; */
+  text-align: center;
+  font-size: 42rpx;
+}
+.tiptext{
+  height: 50rpx;
+  width: 400rpx;
+  padding: 55rpx 175rpx;
+}
+
+.tomilite {
+  height: 160rpx;
+  width: 100%;
+   position: absolute;
+  /* background-color: #fe6900; */
+}
+.tolitebutton{
+  /* position: absolute; */
+  height: 120rpx;
+  width: 600rpx;
+  text-align: center;
+  font-size: 40rpx;
+  margin: 20rpx 75rpx;
+  background-color: #fe6900;
+  border-radius: 10rpx;
+}
+.textbutton{
+  height: 50rpx;
+  width: 400rpx;
+  padding: 40rpx 100rpx 30rpx 100rpx;
+}

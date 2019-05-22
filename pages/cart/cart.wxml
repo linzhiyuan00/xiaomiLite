@@ -1,4 +1,25 @@
 <!--pages/cart/cart.wxml-->
 <view class='main'>
-  
+  <view class='kongcart'>
+    <view class='cart-circle'>
+      <view class='carticon'>
+        <image src='{{carticon}}'></image>
+      </view>
+    </view>
+  </view>
+  <view class='kongtip'>
+    <view class='tiptext'>
+      <text>{{kongtip}}</text>
+    </view>
+
+  </view>
+  <view class='tomilite'>
+  <navigator url='/pages/index/index' open-type='switchTab' hover-class='other-navigator-hover'> 
+    <view class='tolitebutton'>
+      <view class='textbutton'>
+        <text>{{tolitebutton}}</text>
+      </view>
+    </view>
+    </navigator>
+  </view>
 </view>

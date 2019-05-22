@@ -5,6 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
+    carticon:'/images/cart/icon1.png',
+    kongtip:'购物车还是空的',
+    tolitebutton:'到小米商城逛逛'
 
   },
 
