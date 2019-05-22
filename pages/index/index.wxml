@@ -23,7 +23,7 @@
   </view>
   <view class='goods-classify'>
     <view class='classify-list' wx:for="{{classlist}}" wx:key="{{index}}">
-      <navigator url=''>
+      <navigator url='{{item.url}}' hover-class='other-navigator-hover'>
         <image src='{{item.imgsrc}}'></image>
         <view class='classify-text'>
           <text>{{item.text}}</text>

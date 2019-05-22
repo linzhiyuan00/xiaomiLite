@@ -16,63 +16,73 @@ Page({
     title1: '猜你喜欢',
     classlist:[
       {
-        imgsrc:'/images/system-icon/img1.png',
-        text:'手机'
+        imgsrc:'/images/index/img1.png',
+        text:'手机',
+        url:'/pages/index/mbipone/mbipone'
       },
       {
-        imgsrc: '/images/system-icon/img2.png',
-        text: '电视'
+        imgsrc: '/images/index/img2.png',
+        text: '电视',
+        url: '/pages/index/TV/TV'
       },
       {
-        imgsrc: '/images/system-icon/img3.png',
-        text: '电脑'
+        imgsrc: '/images/index/img3.png',
+        text: '电脑',
+        url: '/pages/index/PC/PC'
       },
       {
-        imgsrc: '/images/system-icon/img4.png',
-        text: '智能'
+        imgsrc: '/images/index/img4.png',
+        text: '智能',
+        url: '/pages/index/zhineng/zhineng'
       },
       {
-        imgsrc: '/images/system-icon/img5.png',
-        text: '生态链'
+        imgsrc: '/images/index/img5.png',
+        text: '家电',
+        url: '/pages/index/jiadian/jiadian'
       },
       {
-        imgsrc: '/images/system-icon/img6.png',
-        text: '新品'
+        imgsrc: '/images/index/img6.png',
+        text: '新品',
+        url: '/pages/index/xinpin/xinpin'
       },
       {
-        imgsrc: '/images/system-icon/img7.png',
-        text: '小米众筹'
+        imgsrc: '/images/index/img7.png',
+        text: '小米众筹',
+        url: '/pages/index/zhongchou/zhongchou'
       },
       {
-        imgsrc: '/images/system-icon/img8.png',
-        text: '以旧换新'
+        imgsrc: '/images/index/img8.png',
+        text: '以旧换新',
+        url: '/pages/index/huanxin/huanxin'
       },
       {
-        imgsrc: '/images/system-icon/img9.png',
-        text: '1分拼团'
+        imgsrc: '/images/index/img9.png',
+        text: '1分拼团',
+        url: '/pages/index/pintuan/pintuan'
       },
       {
-        imgsrc: '/images/system-icon/img10.png',
-        text: '每日臻选'
+        imgsrc: '/images/index/img10.png',
+        text: '每日臻选',
+        url: '/pages/index/zhenxuan/zhenxuan'
       },
     ],
     forrecmdgoods1:[
       {
-        url1:'/images/index/img1.jpg',
+        url1:'/images/index/img01.jpg',
         goodsname1:'米家扫地机器人',
         goodsspecial1:'智能路径/大风压',
         goodsprice1:'￥1499',
-        url2: '/images/index/img1.jpg',
+        url2: '/images/index/img01.jpg',
         goodsname2: '米家扫地机器人',
         goodsspecial2: '智能路径/大风压',
         goodsprice2: '￥1499',
       },
       {
-        url1: '/images/index/img1.jpg',
+        url1: '/images/index/img01.jpg',
         goodsname1: '米家扫地机器人',
         goodsspecial1: '智能路径/大风压',
         goodsprice1: '￥1499',
-        url2: '/images/index/img1.jpg',
+        url2: '/images/index/img01.jpg',
         goodsname2: '米家扫地机器人',
         goodsspecial2: '智能路径/大风压',
         goodsprice2: '￥1499',
@@ -80,81 +90,81 @@ Page({
     ],
     forrecmdgoods2:[
       {
-        url1: '/images/index/img2.jpg',
+        url1: '/images/index/img02.jpg',
         goodsname1: '小米小爱智能闹钟',
         goodsspecial1: '能听会说的人工智能闹钟',
         goodsprice1: '￥139',
-        url2: '/images/index/img2.jpg',
+        url2: '/images/index/img02.jpg',
         goodsname2: '小米小爱智能闹钟',
         goodsspecial2: '能听会说的人工智能闹钟',
         goodsprice2: '￥139',
       },
       {
-        url1: '/images/index/img2.jpg',
+        url1: '/images/index/img02.jpg',
         goodsname1: '小米小爱智能闹钟',
         goodsspecial1: '能听会说的人工智能闹钟',
         goodsprice1: '￥139',
-        url2: '/images/index/img2.jpg',
+        url2: '/images/index/img02.jpg',
         goodsname2: '小米小爱智能闹钟',
         goodsspecial2: '能听会说的人工智能闹钟',
         goodsprice2: '￥139',
       },
       {
-        url1: '/images/index/img2.jpg',
+        url1: '/images/index/img02.jpg',
         goodsname1: '小米小爱智能闹钟',
         goodsspecial1: '能听会说的人工智能闹钟',
         goodsprice1: '￥139',
-        url2: '/images/index/img2.jpg',
+        url2: '/images/index/img02.jpg',
         goodsname2: '小米小爱智能闹钟',
         goodsspecial2: '能听会说的人工智能闹钟',
         goodsprice2: '￥139',
       },
       {
-        url1: '/images/index/img2.jpg',
+        url1: '/images/index/img02.jpg',
         goodsname1: '小米小爱智能闹钟',
         goodsspecial1: '能听会说的人工智能闹钟',
         goodsprice1: '￥139',
-        url2: '/images/index/img2.jpg',
+        url2: '/images/index/img02.jpg',
         goodsname2: '小米小爱智能闹钟',
         goodsspecial2: '能听会说的人工智能闹钟',
         goodsprice2: '￥139',
       },
       {
-        url1: '/images/index/img2.jpg',
+        url1: '/images/index/img02.jpg',
         goodsname1: '小米小爱智能闹钟',
         goodsspecial1: '能听会说的人工智能闹钟',
         goodsprice1: '￥139',
-        url2: '/images/index/img2.jpg',
+        url2: '/images/index/img02.jpg',
         goodsname2: '小米小爱智能闹钟',
         goodsspecial2: '能听会说的人工智能闹钟',
         goodsprice2: '￥139',
       },
       {
-        url1: '/images/index/img2.jpg',
+        url1: '/images/index/img02.jpg',
         goodsname1: '小米小爱智能闹钟',
         goodsspecial1: '能听会说的人工智能闹钟',
         goodsprice1: '￥139',
-        url2: '/images/index/img2.jpg',
+        url2: '/images/index/img02.jpg',
         goodsname2: '小米小爱智能闹钟',
         goodsspecial2: '能听会说的人工智能闹钟',
         goodsprice2: '￥139',
       },
       {
-        url1: '/images/index/img2.jpg',
+        url1: '/images/index/img02.jpg',
         goodsname1: '小米小爱智能闹钟',
         goodsspecial1: '能听会说的人工智能闹钟',
         goodsprice1: '￥139',
-        url2: '/images/index/img2.jpg',
+        url2: '/images/index/img02.jpg',
         goodsname2: '小米小爱智能闹钟',
         goodsspecial2: '能听会说的人工智能闹钟',
         goodsprice2: '￥139',
       },
       {
-        url1: '/images/index/img2.jpg',
+        url1: '/images/index/img02.jpg',
         goodsname1: '小米小爱智能闹钟',
         goodsspecial1: '能听会说的人工智能闹钟',
         goodsprice1: '￥139',
-        url2: '/images/index/img2.jpg',
+        url2: '/images/index/img02.jpg',
         goodsname2: '小米小爱智能闹钟',
         goodsspecial2: '能听会说的人工智能闹钟',
         goodsprice2: '￥139',

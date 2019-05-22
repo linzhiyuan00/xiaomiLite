@@ -920,14 +920,14 @@ Page({
     
   },
   switchTab(e) {
-    console.log(e);
+    // console.log(e);
     this.setData({
       toView: e.target.dataset.id,
       curIndex: e.target.dataset.index
     })
   },
   scroll(e) {
-    console.log(e.detail.scrollTop)
+    // console.log(e.detail.scrollTop)
     let index = Math.floor(e.detail.scrollTop / 500);
     this.setData({
       curIndex: index
@@ -952,10 +952,11 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    this.setData({
-      curIndex:0,
-      toView:'xinpin'
-    })
+    // this.setData({
+    //   curIndex:0,
+    //   toView:'xinpin'
+    // })
+    //返回第一个
   },
 
   /**

@@ -4,7 +4,17 @@
     "pages/cart/cart",
     "pages/classify/classify",
     "pages/discover/discover",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/index/mbipone/mbipone",
+    "pages/index/TV/TV",
+    "pages/index/PC/PC",
+    "pages/index/jiadian/jiadian",
+    "pages/index/zhineng/zhineng",
+    "pages/index/xinpin/xinpin",
+    "pages/index/zhongchou/zhongchou",
+    "pages/index/huanxin/huanxin",
+    "pages/index/pintuan/pintuan",
+    "pages/index/zhenxuan/zhenxuan"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,17 +22,16 @@
     "navigationBarTitleText": "小米Lite",
     "navigationBarTextStyle": "white"
   },
-  "tabBar":{
+  "tabBar": {
     "selectedColor": "#ff6700",
     "color": "#666666",
-    "borderStyle":"black",
-    "list":[
+    "borderStyle": "black",
+    "list": [
       {
-        "pagePath":"pages/index/index",
-        "text":"首页",
-        "iconPath":"./images/system-icon/首页.png",
-        "selectedIconPath":"./images/system-icon/首页1.png"
-  
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/system-icon/首页.png",
+        "selectedIconPath": "./images/system-icon/首页1.png"
       },
       {
         "pagePath": "pages/classify/classify",
@@ -49,8 +58,6 @@
         "selectedIconPath": "./images/system-icon/我的1.png"
       }
     ]
-   
-   
   },
   "sitemapLocation": "sitemap.json"
 }
