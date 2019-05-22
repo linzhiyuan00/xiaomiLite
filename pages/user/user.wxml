@@ -1,3 +1,60 @@
 <!--pages/user/user.wxml-->
 <view class='main'>
+  <view class='mainline'></view>
+  <view class='usermain'>
+    <view class='userimg'>
+      <image src='{{userimg}}'></image>
+    </view>
+    <view class='usertext'>
+      <view class='userid'>{{userid}}</view>
+      <view class='xiaomitip'>{{xiaomitip}}</view>
+    </view>
+    <view class='userma'></view>
+  </view>
+  <view class='mainline'></view>
+  <view class='mipin'>
+    <navigator>
+      <view class='detail-box'>
+        <view class='icon-box'>
+          <image src='{{mipinicon}}'></image>
+        </view>
+        <view class='title-box'>
+          <text>{{mipintitle}}</text>
+        </view>
+        <view class='state-box'>
+          <text>{{state}}</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <view class='mainline'></view>
+  <view class='maindetail'>
+    <view wx:for="{{maindetail}}" wx:key="{{maindetail.url}}">
+      <navigator>
+        <view class='detail-box'>
+          <view class='icon-box'>
+            <image src='{{item.url}}'></image>
+          </view>
+          <view class='title-box'>
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+      </navigator>
+      <view class='line'></view>
+    </view>
+  </view>
+  <view class='mainline'></view>
+  <view class='setting'>
+    <navigator>
+      <view class='detail-box'>
+        <view class='icon-box'>
+          <image src='{{settingicon}}'></image>
+        </view>
+        <view class='title-box'>
+          <text>{{settingtitle}}</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+
 </view>

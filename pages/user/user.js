@@ -5,7 +5,32 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    userimg:'/images/user/img1.jpg',
+    userid:'小杰瑞',
+    xiaomitip:'绑定小米账号',
+    mipinicon:'/images/user/icon1.png',
+    mipintitle:'小米精品推荐',
+    state:' (内测)',
+    settingicon:'/images/user/icon6.png',
+    settingtitle:'设置',
+    maindetail:[
+      {
+        url:'/images/user/icon2.png',
+        title:'我的订单'
+      },
+      {
+        url: '/images/user/icon3.png',
+        title: '会员中心'
+      },
+      {
+        url: '/images/user/icon4.png',
+        title: '我的优惠券'
+      },
+      {
+        url: '/images/user/icon5.png',
+        title: '我的F码'
+      },
+    ]
   },
 
   /**
