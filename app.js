@@ -35,5 +35,12 @@ App({
   },
   globalData: {
     userInfo: null
-  }
+  },
+  // detailData:{
+  //   shouji:[
+  //     {
+  //      url:'' 
+  //     }
+  //   ]
+  // }
 })

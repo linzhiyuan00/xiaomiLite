@@ -5,7 +5,35 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    interval: 3000,
+    duration: 800,
+    imgUrls: [
+      '/images/index/mbipone/0xiaomi9.png',
+      '/images/index/mbipone/0redmin7.jpg',
+      '/images/index/mbipone/0redmik20.jpg'
+    ],
+    forrecmdgoods1: [
+      {
+        url1: '/images/index/img01.jpg',
+        goodsname1: '米家扫地机器人',
+        goodsspecial1: '智能路径/大风压',
+        goodsprice1: '￥1499',
+        url2: '/images/index/img01.jpg',
+        goodsname2: '米家扫地机器人',
+        goodsspecial2: '智能路径/大风压',
+        goodsprice2: '￥1499',
+      },
+      {
+        url1: '/images/index/img01.jpg',
+        goodsname1: '米家扫地机器人',
+        goodsspecial1: '智能路径/大风压',
+        goodsprice1: '￥1499',
+        url2: '/images/index/img01.jpg',
+        goodsname2: '米家扫地机器人',
+        goodsspecial2: '智能路径/大风压',
+        goodsprice2: '￥1499',
+      }
+    ],
   },
 
   /**

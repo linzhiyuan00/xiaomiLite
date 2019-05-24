@@ -57,7 +57,7 @@
         </navigator>
       </view>
       <view class='recommendgoods'>
-        <view class='forrow1' wx:for="{{forrecmdgoods1}}" wx:key="{{index}}">
+        <view  wx:for="{{forrecmdgoods1}}" wx:key="{{index}}">
           <view class='bgcline'></view>
           <view class='goodsrow'>
             <view class='goods-cell goodsdiv'>
@@ -105,7 +105,7 @@
         <view class='bgcline'></view>
         <view class='goodslike'>
           <view class='recommendgoods'>
-          <view class='forrow2' wx:for="{{forrecmdgoods2}}" wx:key="{{index}}">
+          <view  wx:for="{{forrecmdgoods2}}" wx:key="{{index}}">
             <view class='goodsrow' >
               <view class='goods-cell goodsdiv'>
                 <navigator>
