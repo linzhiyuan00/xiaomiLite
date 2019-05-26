@@ -122,6 +122,7 @@ swiper-item image {
 .goodsrow{
   height: 480rpx;
   /* background-color: #f5f5f5; */
+  
 }
 .goods-cell{
   text-align: left;
@@ -131,6 +132,8 @@ swiper-item image {
 .goodsdiv{
   float: left;
   width: 360rpx;
+  border-radius: 8rpx;
+  overflow: hidden;
 }
 .goodsright{
   margin-left: 10rpx;
