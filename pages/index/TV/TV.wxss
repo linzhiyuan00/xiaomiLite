@@ -1,1 +1,194 @@
 /* pages/index/TV/TV.wxss */
+page, .main {
+  height: 100%;
+  background-color: #da0c20;
+}
+
+.swiper-box {
+  height: 350rpx;
+  width: 100%;
+}
+
+swiper {
+  height: 350rpx;
+}
+
+swiper-item {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.hottext {
+  height: 140rpx;
+  width: 100%;
+  /* background-color: #ffffff; */
+}
+
+.textbaokuan {
+  height: 60rpx;
+  width: 200rpx;
+  text-align: center;
+  padding: 40rpx 275rpx;
+  color: #6a2bf1;
+  font-size: 40rpx;
+}
+
+.mianpage {
+  width: 730rpx;
+  margin: 0rpx 10rpx 0rpx 10rpx;
+}
+
+.recommendbig {
+  width: 100%;
+  height: 560rpx;
+}
+
+.recommendbig image {
+  width: 100%;
+  height: 400rpx;
+}
+
+.goodsdetail-big {
+  height: 120rpx;
+  /* padding: 10rpx 20rpx 0 20rpx; */
+  background-color: #fff;
+}
+
+.box-left {
+  float: left;
+}
+
+.box-right {
+  float: right;
+}
+
+.goodsname-big {
+  height: 35rpx;
+  font-size: 34rpx;
+  padding-left: 18rpx;
+  padding-top: 5rpx;
+  padding-bottom: 5rpx;
+  color: #000;
+}
+
+.goodsspecial-big {
+  height: 30rpx;
+  font-size: 25rpx;
+  padding-left: 15rpx;
+  padding-top: 30rpx;
+  padding-bottom: 5rpx;
+  color: #999;
+}
+
+.goodsprice-big {
+  /* float: right; */
+  text-align: right;
+  height: 35rpx;
+  width: 200rpx;
+  /* margin: 10rpx 50rpx 10rpx 0; */
+  font-size: 30rpx;
+  color: red;
+}
+
+.buyright {
+  margin: 10rpx 30rpx 10rpx 20rpx;
+  height: 60rpx;
+  width: 240rpx;
+  font-size: 36rpx;
+  text-align: center;
+  background-color: #ea625b;
+}
+
+.fffline {
+  height: 20rpx;
+  background-color: #fff;
+}
+
+.bgcline{
+  height: 10rpx;
+  background-color: #e34128;
+}
+
+
+.recommendgoods{
+  /* height: 820rpx; */
+  background-color: #e34128;
+}
+.goodsrow{
+  height: 480rpx;
+  /* background-color: #f5f5f5; */
+}
+.goods-cell{
+  text-align: left;
+  height: 100%;
+  background-color: #e6e8fa;
+}
+.goodsdiv{
+  float: left;
+  width: 360rpx;
+}
+.goodsright{
+  margin-left: 10rpx;
+}
+.goods-img{
+  width: 100%;
+  height: 280rpx;
+}
+.goods-img image{
+  width: 100%;
+  height: 280rpx;
+}
+.goodsdetail{
+  height: 200rpx;
+  /* padding: 10rpx 20rpx 0 20rpx; */
+  background-color: #ffffff;
+}
+.goodsname{
+  height: 35rpx;
+  font-size: 34rpx;
+  /* padding-left: 18rpx; */
+  text-align: center;
+  padding-top: 5rpx;
+  padding-bottom: 5rpx;
+  color: #000000;
+}
+.goodsspecial{
+  height: 30rpx;
+  font-size: 25rpx;
+  /* padding-left: 15rpx; */
+   padding-top: 5rpx;
+  padding-bottom: 5rpx;
+  color: #999999;
+    text-align: center;
+}
+.goodsprice{
+  height: 35rpx;
+  font-size: 30rpx;
+  /* padding-left: 12rpx; */
+  padding-top: 5rpx;
+  padding-bottom: 10rpx;
+  color: red;
+    text-align: center;
+}
+.lijibuy{
+  height: 60rpx;
+  font-size: 36rpx;
+  text-align: center;
+  /* background-color: #ffffff; */
+}
+.buy-box{
+  height: 100%;
+  width: 240rpx;
+  margin: 0 60rpx;
+  background-color: #ea625b;
+}
+.text-box{
+  height: 100%;
+  width: 100%;
+  padding: 10rpx 0 0 0;
+}

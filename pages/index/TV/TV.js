@@ -5,6 +5,35 @@ Page({
    * 页面的初始数据
    */
   data: {
+    interval: 3000,
+    duration: 800,
+    imgUrls: [
+      '/images/index/PC/xiaomipc.png',
+      '/images/index/PC/pcE55A.png',
+      '/images/index/PC/pc4C-55.png'
+    ],
+    forrecmdgoods1: [
+      {
+        url1: '/images/index/PC/pc4A-65.png',
+        goodsname1: '小米电视4A 65英寸',
+        goodsspecial1: '4K HDR,人工智能语音系统',
+        goodsprice1: '￥2849',
+        url2: '/images/index/PC/touyin4K.png',
+        goodsname2: '激光投影电视 4K',
+        goodsspecial2: '超短焦，在家看巨幕',
+        goodsprice2: '￥9999',
+      },
+      {
+        url1: '/images/index/PC/pc4A-65.png',
+        goodsname1: '小米电视4A 65英寸',
+        goodsspecial1: '4K HDR,人工智能语音系统',
+        goodsprice1: '￥2849',
+        url2: '/images/index/PC/touyin4K.png',
+        goodsname2: '激光投影电视 4K',
+        goodsspecial2: '超短焦，在家看巨幕',
+        goodsprice2: '￥9999',
+      }
+    ],
 
   },
 

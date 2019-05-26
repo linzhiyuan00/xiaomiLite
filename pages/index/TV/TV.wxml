@@ -1,2 +1,106 @@
 <!--pages/index/TV/TV.wxml-->
-<text>pages/index/TV/TV.wxml</text>
+<view class='main'>
+  <view class='swiper-box'>
+    <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="100%" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='hottext'>
+    <view class='textbaokuan'>
+      <text>爆款推荐</text>
+    </view>
+  </view>
+  <view class='mianpage'>
+    <view class='recommendbig'>
+      <navigator>
+        <image src='/images/index/PC/pc4-55.png'></image>
+        <view class='fffline'></view>
+        <view class='goodsdetail-big'>
+          <view class='box-left'>
+            <view class='goodsname-big'>
+              <text>小米电视4 55英寸</text>
+            </view>
+            <view class='goodsspecial-big'>
+              <text>4.99mm 超极薄机身，人工智能语音</text>
+            </view>
+          </view>
+          <view class='box-right'>
+            <view class='goodsprice-big'>
+              <text>￥3699</text>
+            </view>
+            <view class='buyright'>
+              <view class='text-box'>
+                <text>立即购买</text>
+              </view>
+            </view>
+          </view>
+
+        </view>
+        <view class='fffline'></view>
+      </navigator>
+    </view>
+    <view class='recommendgoods'>
+      <view wx:for="{{forrecmdgoods1}}" wx:key="{{index}}">
+        <view class='bgcline'></view>
+        <view class='goodsrow'>
+          <view class='goods-cell goodsdiv'>
+            <navigator>
+              <view class='goods-img'>
+                <image src='{{item.url1}}'></image>
+              </view>
+              <view class='goodsdetail'>
+                <view class='goodsname'>
+                  <text>{{item.goodsname1}}</text>
+                </view>
+                <view class='goodsspecial'>
+                  <text>{{item.goodsspecial1}}</text>
+                </view>
+                <view class='goodsprice'>
+                  <text>{{item.goodsprice1}}</text>
+                </view>
+                <view class='lijibuy'>
+                  <view class='buy-box'>
+                    <view class='text-box'>
+                      <text>立即购买</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </navigator>
+          </view>
+          <view class='goods-cell goodsdiv goodsright'>
+            <navigator>
+              <view class='goods-img'>
+                <image src='{{item.url2}}'></image>
+              </view>
+              <view class='goodsdetail'>
+                <view class='goodsname'>
+                  <text>{{item.goodsname2}}</text>
+                </view>
+                <view class='goodsspecial'>
+                  <text>{{item.goodsspecial2}}</text>
+                </view>
+                <view class='goodsprice'>
+                  <text>{{item.goodsprice2}}</text>
+                </view>
+                <view class='lijibuy'>
+                  <view class='buy-box'>
+                    <view class='text-box'>
+                      <text>立即购买</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </navigator>
+          </view>
+        </view>
+      </view>
+      <view class='bgcline'></view>
+    </view>
+  </view>
+
+</view>

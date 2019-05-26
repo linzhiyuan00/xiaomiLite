@@ -14,7 +14,8 @@
     "pages/index/zhongchou/zhongchou",
     "pages/index/huanxin/huanxin",
     "pages/index/pintuan/pintuan",
-    "pages/index/zhenxuan/zhenxuan"
+    "pages/index/zhenxuan/zhenxuan",
+    "pages/goods/goods"
   ],
   "window": {
     "backgroundTextStyle": "light",

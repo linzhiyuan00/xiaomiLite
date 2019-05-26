@@ -34,7 +34,9 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    gooddetail: [],
+    tocartMsg: []
   },
   // detailData:{
   //   shouji:[
