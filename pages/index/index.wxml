@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<!-- <view class='main'>
+<view class='main'>
   <view class='search'>
     <navigator>
       <view class='searchmain'>
@@ -154,6 +154,6 @@
     <view class='mainbgcline'></view>
 
   </view>
-</view> -->
+</view>
 
-<classify1 id="classify1"></classify1>
+<!-- <classify1 id="classify1"></classify1> -->

@@ -102,12 +102,12 @@
 .goodsList .goods-Box .goodsText{
   height: 200rpx;
   width: 360rpx;
-  margin: 0 0 10rpx 0;
+  margin: 0 0 0 10rpx;
   text-align: center;
-  background-color: green;
+  /* background-color: green; */
 }
 .goodsList .goods-Box .goodsText .title{
-  display: block;
+  /* display: block; */
   height: 35rpx;
   font-size: 34rpx;
   padding: 5rpx 0 5rpx 0;
@@ -126,7 +126,7 @@
 }
 
 .goodsList .goods-Box .goodsText .price{
-  display: block;
+  /* display: block; */
   height: 35rpx;
   width: 200rpx;
   font-size: 30rpx;

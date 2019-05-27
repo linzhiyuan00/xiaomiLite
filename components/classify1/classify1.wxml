@@ -1,5 +1,4 @@
 <!--components/classify1/classify1.wxml-->
- 
 <view class='goodsList' wx:for='{{goodsList}}' wx:key='{{index}}'>
   <!-- <view class='bgcline'></view> -->
   <view class=" {{item.big ? 'big' : 'goods-Box'}}" data-index='{{index}}' bindtap='toDetail' style=''>
