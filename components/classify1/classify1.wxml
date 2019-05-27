@@ -1,2 +1,24 @@
 <!--components/classify1/classify1.wxml-->
-
+ 
+<view class='goodsList' wx:for='{{goodsList}}' wx:key='{{index}}'>
+  <!-- <view class='bgcline'></view> -->
+  <view class=" {{item.big ? 'big' : 'goods-Box'}}" data-index='{{index}}' bindtap='toDetail' style=''>
+    <image src="{{item.imgurl}}" />
+    <view class="goodsText">
+    <view class='box-left'>
+      <text class="title">{{item.title}}</text>
+      <text class="disc">{{item.desc}}</text>
+    </view>
+    <view class='box-right'>
+      <text class="price">{{item.price}}</text>
+      <view class='lijibuy'>
+        <view class='buy-box'>
+          <view class='text-box'>
+            <text>{{item.buy}}</text>
+          </view>
+        </view>
+      </view>
+      </view>
+    </view>
+  </view>
+</view>

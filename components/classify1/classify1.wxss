@@ -1,1 +1,161 @@
 /* components/classify1/classify1.wxss */
+
+.goodsList{
+  display: inline-block;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+  /* background-color: red; */
+}
+.goodsList .big {
+  display: block;
+  width: 750rpx;
+  height: 520rpx;
+}
+
+.bgcline {
+  height: 10rpx;
+  width: 750rpx;
+  background-color: green;
+}
+
+.goodsList .goods-Box {
+  display: inline-block;
+  width: 100%;
+  /* background: red; */
+  box-sizing: border-box;
+}
+
+.goodsList .big image {
+  display: block;
+  width: 750rpx;
+  height: 400rpx;
+}
+
+.goodsList .big .goodsText {
+  display: block;
+  width: 750rpx;
+  height: 120rpx;
+}
+.box-left {
+  float: left;
+}
+
+.box-right {
+  float: right;
+}
+.goodsList .big .goodsText .title{
+  display: block;
+  height: 35rpx;
+  font-size: 34rpx;
+  padding: 5rpx 50rpx 5rpx 18rpx;
+  color: #000;
+}
+
+.goodsList .big .goodsText .disc{
+  height: 30rpx;
+  font-size: 25rpx;
+  padding: 30rpx 0 5rpx 15rpx;
+  color: #999;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+}
+
+.goodsList .big .goodsText .price{
+  display: block;
+  text-align: right;
+  height: 35rpx;
+  width: 200rpx;
+  font-size: 30rpx;
+  padding: 5rpx 0 10rpx 0;
+  color: red;
+}
+
+
+.goodsList .big .goodsText .lijibuy {
+  height: 60rpx;
+  font-size: 36rpx;
+  text-align: center;
+  /* background-color: #ffffff; */
+}
+
+ .goodsList .big .goodsText .buy-box {
+  height: 100%;
+  width: 200rpx;
+  margin: 0 60rpx;
+  background-color: #ea625b;
+}
+
+ .goodsList .big .goodsText .text-box {
+  height: 100%;
+  width: 100%;
+  padding: 10rpx 0 0 0;
+}
+
+.goodsList .goods-Box image{
+  width: 360rpx;
+  height: 360rpx;
+  margin: 0 0 0 10rpx;
+}
+.goodsList .goods-Box .goodsText{
+  height: 200rpx;
+  width: 360rpx;
+  margin: 0 0 10rpx 0;
+  text-align: center;
+  background-color: green;
+}
+.goodsList .goods-Box .goodsText .title{
+  display: block;
+  height: 35rpx;
+  font-size: 34rpx;
+  padding: 5rpx 0 5rpx 0;
+  color: #000;
+}
+.goodsList .goods-Box .goodsText .disc{
+  width: 300rpx;
+  height: 30rpx;
+  font-size: 25rpx;
+  padding: 5rpx 0 5rpx 20rpx;
+  color: #999;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+}
+
+.goodsList .goods-Box .goodsText .price{
+  display: block;
+  height: 35rpx;
+  width: 200rpx;
+  font-size: 30rpx;
+  padding: 5rpx 0 10rpx 0;
+  color: red;
+}
+
+
+.goodsList .goods-Box .goodsText .lijibuy {
+  height: 60rpx;
+  font-size: 36rpx;
+  text-align: center;
+}
+
+ .goodsList .goods-Box .goodsText .buy-box {
+  height: 100%;
+  width: 200rpx;
+  margin: 0 60rpx;
+  background-color: #ea625b;
+}
+
+ .goodsList .goods-Box .goodsText .text-box {
+  height: 100%;
+  width: 100%;
+  padding: 10rpx 0 0 0;
+}
+.goodsList .goods-Box .goodsText .box-left{
+  float: none;
+}
+.goodsList .goods-Box .goodsText .box-right{
+  float: none;
+}
