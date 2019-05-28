@@ -17,7 +17,7 @@
   <view class='mianpage'>
     <view class='recommendbig'>
       <navigator>
-        <image src='/images/index/mbipone/redmi7.png'></image>
+        <image src='https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d729b57d7eadb4d672cfdc7e7b05648e.jpg?w=1212&h=716'></image>
         <view class='fffline'></view>
         <view class='goodsdetail-big'>
           <view class='box-left'>

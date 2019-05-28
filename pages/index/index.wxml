@@ -39,17 +39,17 @@
       </view>
       <view class='recommendbig'>
         <navigator>
-          <image src='/images/index/image1.png'></image>
+          <image src='https://i1.mifile.cn/a4/xmad_15586683348207_opnBm.jpg'></image>
           <view class='fffline'></view>
           <view class='goodsdetail'>
             <view class='goodsname'>
-              <text>55'小米电视4C</text>
+              <text>65"小米电视4A</text>
             </view>
             <view class='goodsspecial'>
-              <text>时尚多彩/细节出众/价格实惠</text>
+              <text>4K HDR/人工智能语音系统</text>
             </view>
             <view class='goodsprice'>
-              <text>￥2399</text>
+              <text>￥2799</text>
             </view>
 
           </view>

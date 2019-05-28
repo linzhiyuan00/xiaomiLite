@@ -1,23 +1,17 @@
 <!--pages/index/TV/TV.wxml-->
 <view class='main'>
   <view class='swiper-box'>
-    <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
-      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
-        <swiper-item>
-          <image src="{{item}}" class="slide-image" width="100%" />
-        </swiper-item>
-      </block>
-    </swiper>
+    <image src="{{tvimg}}"  />
   </view>
   <view class='hottext'>
     <view class='textbaokuan'>
-      <text>爆款推荐</text>
+      <text>人气甄选</text>
     </view>
   </view>
   <view class='mianpage'>
     <view class='recommendbig'>
       <navigator>
-        <image src='/images/index/PC/pc4-55.png'></image>
+        <image src='https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ef90dec5a8c8d76456a83da570113732.jpg?w=1708&h=868'></image>
         <view class='fffline'></view>
         <view class='goodsdetail-big'>
           <view class='box-left'>

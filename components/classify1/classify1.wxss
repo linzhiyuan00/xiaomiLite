@@ -2,10 +2,8 @@
 
 .goodsList{
   display: inline-block;
-  margin-top: 20rpx;
-  margin-bottom: 20rpx;
   box-sizing: border-box;
-  /* background-color: red; */
+  background-color:#dbdbdb;
 }
 .goodsList .big {
   display: block;
@@ -15,8 +13,8 @@
 
 .bgcline {
   height: 10rpx;
-  width: 750rpx;
-  background-color: green;
+  width: 375rpx;
+  background-color: #dbdbdb;
 }
 
 .goodsList .goods-Box {
@@ -24,6 +22,7 @@
   width: 100%;
   /* background: red; */
   box-sizing: border-box;
+  margin: 0 5rpx 0 5rpx;
 }
 
 .goodsList .big image {
@@ -36,6 +35,7 @@
   display: block;
   width: 750rpx;
   height: 120rpx;
+  background: #ffffff;
 }
 .box-left {
   float: left;
@@ -97,14 +97,13 @@
 .goodsList .goods-Box image{
   width: 360rpx;
   height: 360rpx;
-  margin: 0 0 0 10rpx;
 }
 .goodsList .goods-Box .goodsText{
   height: 200rpx;
   width: 360rpx;
-  margin: 0 0 0 10rpx;
   text-align: center;
   /* background-color: green; */
+  background: #ffffff;
 }
 .goodsList .goods-Box .goodsText .title{
   /* display: block; */

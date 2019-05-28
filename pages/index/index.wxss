@@ -115,6 +115,10 @@ swiper-item image{
    padding-top: 5rpx;
   padding-bottom: 5rpx;
   color: #999999;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
 }
 .goodsprice{
   height: 35rpx;

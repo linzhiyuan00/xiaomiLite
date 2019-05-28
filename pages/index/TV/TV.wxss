@@ -8,17 +8,7 @@ page, .main {
   height: 350rpx;
   width: 100%;
 }
-
-swiper {
-  height: 350rpx;
-}
-
-swiper-item {
-  width: 100%;
-  height: 100%;
-}
-
-swiper-item image {
+.swiper-box image {
   width: 100%;
   height: 100%;
 }
@@ -34,7 +24,7 @@ swiper-item image {
   width: 200rpx;
   text-align: center;
   padding: 40rpx 275rpx;
-  color: #6a2bf1;
+  color: #FFD700;
   font-size: 40rpx;
 }
 

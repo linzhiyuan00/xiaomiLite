@@ -1,7 +1,7 @@
 /* pages/index/PC/PC.wxss */
 page, .main {
   height: 100%;
-  background-color: #e6e8fa;
+  background-color: #778899;
 }
 
 .swiper-box {
@@ -34,7 +34,7 @@ swiper-item image {
   width: 200rpx;
   text-align: center;
   padding: 40rpx 275rpx;
-  color: #6a2bf1;
+  color: #e6e8fa;
   font-size: 40rpx;
 }
 
@@ -111,13 +111,13 @@ swiper-item image {
 
 .bgcline{
   height: 10rpx;
-  background-color: #e6e8fa;
+  background-color: #778899;
 }
 
 
 .recommendgoods{
   /* height: 820rpx; */
-  background-color: #e6e8fa;
+  background-color: #778899;
 }
 .goodsrow{
   height: 480rpx;
@@ -126,7 +126,7 @@ swiper-item image {
 .goods-cell{
   text-align: left;
   height: 100%;
-  background-color: #e6e8fa;
+  background-color: #778899;
 }
 .goodsdiv{
   float: left;
