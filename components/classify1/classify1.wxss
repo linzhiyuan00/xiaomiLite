@@ -2,7 +2,7 @@
 
 .goodsList{
   display: inline-block;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   background-color:#dbdbdb;
 }
 .goodsList .big {
@@ -19,7 +19,7 @@
 
 .goodsList .goods-Box {
   display: inline-block;
-  width: 100%;
+  width: 365rpx;
   /* background: red; */
   box-sizing: border-box;
   margin: 0 5rpx 0 5rpx;
@@ -116,7 +116,7 @@
   width: 300rpx;
   height: 30rpx;
   font-size: 25rpx;
-  padding: 5rpx 0 5rpx 20rpx;
+  padding: 0 0 5rpx 20rpx;
   color: #999;
   white-space: nowrap;
   overflow: hidden;
@@ -129,28 +129,28 @@
   height: 35rpx;
   width: 200rpx;
   font-size: 30rpx;
-  padding: 5rpx 0 10rpx 0;
+  padding: 0 0 5rpx 0;
   color: red;
 }
 
 
 .goodsList .goods-Box .goodsText .lijibuy {
-  height: 60rpx;
+  height: 50rpx;
   font-size: 36rpx;
-  text-align: center;
+  /* text-align: center; */
 }
 
  .goodsList .goods-Box .goodsText .buy-box {
   height: 100%;
   width: 200rpx;
-  margin: 0 60rpx;
+  margin: 0 80rpx 0 80rpx;
   background-color: #ea625b;
 }
 
  .goodsList .goods-Box .goodsText .text-box {
   height: 100%;
   width: 100%;
-  padding: 10rpx 0 0 0;
+  padding: 0 0 0 0;
 }
 .goodsList .goods-Box .goodsText .box-left{
   float: none;

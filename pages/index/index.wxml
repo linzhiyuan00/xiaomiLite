@@ -37,64 +37,58 @@
       <view class='recommendtext'>
         {{recommendtext}}
       </view>
-      <view class='recommendbig'>
-        <navigator>
-          <image src='https://i1.mifile.cn/a4/xmad_15586683348207_opnBm.jpg'></image>
-          <view class='fffline'></view>
-          <view class='goodsdetail'>
-            <view class='goodsname'>
-              <text>65"小米电视4A</text>
-            </view>
-            <view class='goodsspecial'>
-              <text>4K HDR/人工智能语音系统</text>
-            </view>
-            <view class='goodsprice'>
-              <text>￥2799</text>
-            </view>
-
+      <view class='recommendbig' bindtap='toDetail'>
+        <image src='https://i1.mifile.cn/a4/xmad_15586683348207_opnBm.jpg'></image>
+        <view class='fffline'></view>
+        <view class='goodsdetail'>
+          <view class='goodsname'>
+            <text>65"小米电视4A</text>
           </view>
-          <view class='fffline'></view>
-        </navigator>
+          <view class='goodsspecial'>
+            <text>4K HDR/人工智能语音系统</text>
+          </view>
+          <view class='goodsprice'>
+            <text>￥2799</text>
+          </view>
+
+        </view>
+        <view class='fffline'></view>
       </view>
       <view class='recommendgoods'>
-        <view  wx:for="{{forrecmdgoods1}}" wx:key="{{index}}">
+        <view wx:for="{{forrecmdgoods1}}" wx:key="{{index}}">
           <view class='bgcline'></view>
           <view class='goodsrow'>
-            <view class='goods-cell goodsdiv'>
-              <navigator>
-                <view class='goods-img'>
-                  <image src='{{item.url1}}'></image>
+            <view class='goods-cell goodsdiv' bindtap='toDetail'>
+              <view class='goods-img'>
+                <image src='{{item.url1}}'></image>
+              </view>
+              <view class='goodsdetail'>
+                <view class='goodsname'>
+                  <text>{{item.goodsname1}}</text>
                 </view>
-                <view class='goodsdetail'>
-                  <view class='goodsname'>
-                    <text>{{item.goodsname1}}</text>
-                  </view>
-                  <view class='goodsspecial'>
-                    <text>{{item.goodsspecial1}}</text>
-                  </view>
-                  <view class='goodsprice'>
-                    <text>{{item.goodsprice1}}</text>
-                  </view>
+                <view class='goodsspecial'>
+                  <text>{{item.goodsspecial1}}</text>
                 </view>
-              </navigator>
+                <view class='goodsprice'>
+                  <text>{{item.goodsprice1}}</text>
+                </view>
+              </view>
             </view>
-            <view class='goods-cell goodsdiv goodsright'>
-              <navigator>
-                <view class='goods-img'>
-                  <image src='{{item.url2}}'></image>
+            <view class='goods-cell goodsdiv goodsright' bindtap='toDetail'>
+              <view class='goods-img'>
+                <image src='{{item.url2}}'></image>
+              </view>
+              <view class='goodsdetail'>
+                <view class='goodsname'>
+                  <text>{{item.goodsname2}}</text>
                 </view>
-                <view class='goodsdetail'>
-                  <view class='goodsname'>
-                    <text>{{item.goodsname2}}</text>
-                  </view>
-                  <view class='goodsspecial'>
-                    <text>{{item.goodsspecial2}}</text>
-                  </view>
-                  <view class='goodsprice'>
-                    <text>{{item.goodsprice2}}</text>
-                  </view>
+                <view class='goodsspecial'>
+                  <text>{{item.goodsspecial2}}</text>
                 </view>
-              </navigator>
+                <view class='goodsprice'>
+                  <text>{{item.goodsprice2}}</text>
+                </view>
+              </view>
             </view>
           </view>
         </view>
@@ -105,10 +99,9 @@
         <view class='bgcline'></view>
         <view class='goodslike'>
           <view class='recommendgoods'>
-          <view  wx:for="{{forrecmdgoods2}}" wx:key="{{index}}">
-            <view class='goodsrow' >
-              <view class='goods-cell goodsdiv'>
-                <navigator>
+            <view wx:for="{{forrecmdgoods2}}" wx:key="{{index}}">
+              <view class='goodsrow'>
+                <view class='goods-cell goodsdiv' bindtap='toDetail'>
                   <view class='goods-img'>
                     <image src='{{item.url1}}'></image>
                   </view>
@@ -123,10 +116,8 @@
                       <text>{{item.goodsprice1}}</text>
                     </view>
                   </view>
-                </navigator>
-              </view>
-              <view class='goods-cell goodsdiv goodsright'>
-                <navigator>
+                </view>
+                <view class='goods-cell goodsdiv goodsright' bindtap='toDetail'>
                   <view class='goods-img'>
                     <image src='{{item.url2}}'></image>
                   </view>
@@ -141,13 +132,12 @@
                       <text>{{item.goodsprice2}}</text>
                     </view>
                   </view>
-                </navigator>
+                </view>
               </view>
-            </view>
-            <view class='bgcline'></view>
+              <view class='bgcline'></view>
             </view>
           </view>
-          
+
         </view>
       </view>
     </view>

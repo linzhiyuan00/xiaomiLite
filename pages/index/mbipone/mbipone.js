@@ -35,6 +35,18 @@ Page({
       }
     ],
   },
+  toDetail: function (e) {
+    // var index = e.currentTarget.dataset.index;
+    // var detail = this.data.goodsList[index];
+    // app.globalData.detail = detail;
+    // console.log(app.globalData.detail)
+
+
+
+    wx.navigateTo({
+      url: '/pages/goods/goods',
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

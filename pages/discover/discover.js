@@ -21,24 +21,24 @@ Page({
     ],
     mainbody:[
       {
-        url:"/images/discover/img1.jpg",
+        url:"https://i8.mifile.cn/b2c-mimall-media/d57b31c16bb23245e8ae02bd885cb647.jpg?w=1212&h=716",
         title:'抽奖',
-        name:'小米小爱耳机 随身版 * 3'
+        name:'小米圈铁耳机2 随身版 * 10'
       },
       {
-        url: "/images/discover/img1.jpg",
+        url: "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/826a98f7c95ceba2c2e70829fdb2237d.jpg?w=1080&h=720",
         title: '抽奖',
-        name: '小米小爱耳机 随身版 * 2'
+        name: '米家床头灯2 柔光版 * 2'
       },
       {
-        url: "/images/discover/img1.jpg",
+        url: "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/471d75c877eff80fa5f98487abb1898d.jpg?w=1080&h=720",
         title: '抽奖',
-        name: '小米小爱耳机 随身版 * 1'
+        name: '小米米家智能插座 * 10'
       },
       {
-        url: "/images/discover/img1.jpg",
+        url: "https://i8.mifile.cn/b2c-mimall-media/01a8d491c76acb53aa918068ccfa59c1.jpg?w=1080&h=720",
         title: '专题',
-        name: '小米小爱耳机 随身版 * 10'
+        name: '米家新风机 * 2'
       },
     ]
 
