@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    goodds: [],
+    goodsdetail: [],
     toCartMsg: [],
     person: {
       "personImg": "https://i8.mifile.cn/b2c-mimall-media/130b5d1edf2b08c7d652c305a3b51ba8.jpg?w=1212&h=716",
@@ -15,23 +15,29 @@ Page({
     }
 
   },
-  tocart: function () {
-    this.setData({
-      toCartMsg: this.data.goodds
-    })
-    app.globalData.tocartMsg.push(this.data.toCartMsg);
-    wx.showToast({
-      title: '已加入购物车',
-      icon: 'success',
-      duration: 2000
-    })
-  },
+  // tocart: function () {
+  //   this.setData({
+  //     toCartMsg: this.data.goodds
+  //   })
+  //   app.globalData.tocartMsg.push{ url2, goodsname2, goodsspecial2, goodsprice2 } {
+  //     let detail = { url1, goodsname1, goodsspecial1, goodsprice1 }
+  //     let detail = { url1, goodsname1, goodsspecial1, goodsprice1 }
+  //     let detail = { url1, goodsname1, goodsspecial1, goodsprice1 }
+  //     let detail = { url1, goodsname1, goodsspecial1, goodsprice1 sadsdazcxzcx      url2, goodsname2, goodsspecial2, goodsprice2 : url2url2(this.data.toCartMsg);
+  //   wx.showToast({
+  //     title: '已加入购物车',
+  //     icon: 'success',
+  //     duration: 2000
+  //   })
+  // },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      gooddetail: app.goodsdetail
+    })
   },
 
   /**

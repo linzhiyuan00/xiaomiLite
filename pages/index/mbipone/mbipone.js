@@ -1,4 +1,6 @@
 // pages/index/mbipone/mbipone.js
+const app = getApp()
+
 Page({
 
   /**
@@ -12,6 +14,9 @@ Page({
       'https://i1.mifile.cn/a4/xmad_15529884424562_HKYaG.jpg',
       'https://i8.mifile.cn/b2c-mimall-media/1f60a0afff47ac32b7a1659e2b24c19a.jpg?w=1708&h=868'
     ],
+    goodsnamebig:'Redmi 7',
+    goodsspecialbig:'4000mAh超长续航',
+    goodspricebig:'699元',
     forrecmdgoods1: [
       {
         url1: 'https://i1.mifile.cn/a1/pms_1552805539.44635255!200x200.jpg',
@@ -34,13 +39,36 @@ Page({
         goodsprice2: '2999元起',
       }
     ],
+    detail:[]
   },
-  toDetail: function (e) {
-    // var index = e.currentTarget.dataset.index;
-    // var detail = this.data.goodsList[index];
-    // app.globalData.detail = detail;
-    // console.log(app.globalData.detail)
+  toDetailleft:function(e){
+    var index = e.currentTarget.dataset.index1;
+    console.log(index);
+    var { url1,goodsname1, goodsspecial1, goodsprice1} = this.data.forrecmdgoods1[index];
+    let detail = { url: url1, goodsname: goodsname1, goodsspecial: goodsspecial1, goodsprice:goodsprice1 }
+    console.log(detail);
+    app.goodsdetail = detail;
+    console.log(app.goodsdetail)
+    this.setData({
+      detail: detail
+    })
 
+
+    wx.navigateTo({
+      url: '/pages/goods/goods',
+    })
+  },
+  toDetailright: function (e) {
+    var index = e.currentTarget.dataset.index2;
+    console.log(index);
+    var { url2, goodsname2, goodsspecial2, goodsprice2 } = this.data.forrecmdgoods1[index];
+    let detail = { url: url2, goodsname: goodsname2, goodsspecial: goodsspecial2, goodsprice: goodsprice2 }
+    console.log(detail);
+    app.goodsdetail = detail;
+    console.log(app.goodsdetail)
+    this.setData({
+      detail: detail
+    })
 
 
     wx.navigateTo({

@@ -15,21 +15,21 @@
     </view>
   </view>
   <view class='mianpage'>
-    <view class='recommendbig' bindtap='toDetail'>
+    <view class='recommendbig' bindtap='toDetailbig'>
         <image src='https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d729b57d7eadb4d672cfdc7e7b05648e.jpg?w=1212&h=716'></image>
         <view class='fffline'></view>
         <view class='goodsdetail-big'>
           <view class='box-left'>
             <view class='goodsname-big'>
-              <text>Redmi 7</text>
+              <text>{{goodsnamebig}}</text>
             </view>
             <view class='goodsspecial-big'>
-              <text>4000mAh超长续航</text>
+              <text>{{goodsspecialbig}}</text>
             </view>
           </view>
           <view class='box-right'>
             <view class='goodsprice-big'>
-              <text>699元起</text>
+              <text>{{goodspricebig}}</text>
             </view>
             <view class='buyright'>
               <view class='text-box'>
@@ -45,7 +45,7 @@
       <view wx:for="{{forrecmdgoods1}}" wx:key="{{index}}">
         <view class='bgcline'></view>
         <view class='goodsrow'>
-          <view class='goods-cell goodsdiv' bindtap='toDetail'>
+          <view class='goods-cell goodsdiv' bindtap='toDetailleft' data-index1="{{index}}">
               <view class='goods-img'>
                 <image src='{{item.url1}}'></image>
               </view>
@@ -68,7 +68,7 @@
                 </view>
               </view>
           </view>
-          <view class='goods-cell goodsdiv goodsright' bindtap='toDetail'>
+          <view class='goods-cell goodsdiv goodsright' bindtap='toDetailright' data-index2="{{index}}">
               <view class='goods-img'>
                 <image src='{{item.url2}}'></image>
               </view>

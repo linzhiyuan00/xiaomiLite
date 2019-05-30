@@ -5,15 +5,15 @@
         <swiper class="section" indicator-dots="true" indicator-active-color="#fff" autoplay="true" interval="4000" duration="500">
             <block>
                 <swiper-item>
-                    <image src="{{goodds.image}}" />
+                    <image src="{{gooddetail.url}}" />
                 </swiper-item>
             </block>
         </swiper>
     </view>
     <view class="page_bd">
-        <view class="title">{{goodds.title}}</view>
-        <view class="desc">{{goodds.desc}}</view>
-        <view class="pric">{{goodds.price}}元</view>
+        <view class="title">{{gooddetail.goodsname}}</view>
+        <view class="desc">{{gooddetail.goodsspecial}}</view>
+        <view class="pric">{{gooddetail.goodsprice}}</view>
     </view>
 </view>
     <view class="page_fd ">

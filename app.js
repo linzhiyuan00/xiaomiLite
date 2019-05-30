@@ -35,7 +35,7 @@ App({
   },
   globalData: {
     userInfo: null,
-    gooddetail: [],
+    goodsdetail: [],
     tocartMsg: []
   },
   // detailData:{
