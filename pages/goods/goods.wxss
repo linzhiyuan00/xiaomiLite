@@ -63,6 +63,8 @@
 .say .Nickname{
     position: relative;
     top: -70rpx;
+    font-size: 30rpx;
+    color: red;
 }
 .say .content{
     width: 500rpx;

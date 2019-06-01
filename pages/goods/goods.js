@@ -10,7 +10,7 @@ Page({
     toCartMsg: [],
     person: {
       "personImg": "https://i8.mifile.cn/b2c-mimall-media/130b5d1edf2b08c7d652c305a3b51ba8.jpg?w=1212&h=716",
-      "nickname": "小花逛商城",
+      "nickname": "小杰瑞",
       "content": "AR太好玩了，分享到朋友圈很多人问怎么弄的，可惜评价没法传视频，米兔应该给我广告费。 卡片有120多张，一年级的朋友玩了一个多小时了。。很多知识点，英语发音貌似老外录的，很标准。 小米出品，必须精品！"
     }
 
