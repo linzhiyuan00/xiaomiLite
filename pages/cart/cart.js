@@ -25,56 +25,56 @@ Page({
 
   },
   minusCount: function (e) {
-    let orderlist = this.data.orderlist;
+    let cartlist = this.data.cartlist;
     const index = e.target.dataset.index;
-    let num = this.data.orderlist[index].number;
-    console.log(this.data.orderlist[index].number);
+    let num = this.data.cartlist[index].number;
+    console.log(this.data.cartlist[index].number);
     num -= 1;
-    orderlist[index].number = num;
+    cartlist[index].number = num;
     if (num == 0) {
-      orderlist.splice(index, 1)
+      cartlist.splice(index, 1)
     }
-    if (this.data.orderlist.length == 0) {
+    if (this.data.cartlist.length == 0) {
       this.setData({
         flag: false
       })
     }
     this.setData({
-      orderlist
+      cartlist
     })
   },
   addCount: function (e) {
-    let orderlist = this.data.orderlist;
+    let cartlist = this.data.cartlist;
     const index = e.target.dataset.index;
-    let num = this.data.orderlist[index].number;
-    console.log(this.data.orderlist[index].number);
+    let num = this.data.cartlist[index].number;
+    console.log(this.data.cartlist[index].number);
     num += 1;
 
-    orderlist[index].number = num;
+    cartlist[index].number = num;
     this.setData({
-      orderlist
+      cartlist
     })
   },
   selectAll: function (e) {
     let selectAllStatus = this.data.selectAllStatus;
     selectAllStatus = !selectAllStatus;
-    let orderlist = this.data.orderlist;
-    for (let i = 0; i < orderlist.length; i++) {
+    let cartlist = this.data.cartlist;
+    for (let i = 0; i < cartlist.length; i++) {
 
-      orderlist[i].selected = selectAllStatus;
+      cartlist[i].selected = selectAllStatus;
     }
     this.setData({
-      orderlist,
+      cartlist,
       selectAllStatus,
     })
     this.getTotalPrice()
   },
   getTotalPrice: function (e) {
-    let orderlist = this.data.orderlist;
+    let cartlist = this.data.cartlist;
     let total = 0;
-    for (let i = 0; i < orderlist.length; i++) {
-      if (orderlist[i].selected) {
-        total += (+orderlist[i].price * +orderlist[i].number);
+    for (let i = 0; i < cartlist.length; i++) {
+      if (cartlist[i].selected) {
+        total += (+cartlist[i].goodsprice * +cartlist[i].number);
       }
     }
     // total=total.toFixed(1)
@@ -84,45 +84,49 @@ Page({
   },
   selectList: function (e) {
     const index = e.currentTarget.dataset.index;
-    let orderlist = this.data.orderlist;
-    const selected = orderlist[index].selected;
-    orderlist[index].selected = !selected;
+    let cartlist = this.data.cartlist;
+    const selected = cartlist[index].selected;
+    cartlist[index].selected = !selected;
     const a = [];
-    for (let i = 0; i < orderlist.length; i++) {
-      if (orderlist[i].selected) {
-        a.push(orderlist[index])
+    for (let i = 0; i < cartlist.length; i++) {
+      if (cartlist[i].selected) {
+        a.push(cartlist[index])
       }
     }
-    if (orderlist.length <= a.length) {
+    if (cartlist.length <= a.length) {
       this.setData({
-        selectAllStatus: true, orderlist
+        selectAllStatus: true, cartlist
       });
     } else {
       this.setData({
-        selectAllStatus: false, orderlist
+        selectAllStatus: false, cartlist
       });
     }
     this.getTotalPrice()
   },
   deleteList: function (e) {
     const index = e.target.dataset.index;
-    let orderlist = this.data.orderlist;
-    orderlist.splice(index, 1)
-    if (this.data.orderlist.length == 0) {
+    let cartlist = this.data.cartlist;
+    cartlist.splice(index, 1)
+    if (this.data.cartlist.length == 0) {
       this.setData({
         flag: false
       })
     }
     this.setData({
-      orderlist
+      cartlist
     })
 
   },
   fff() {
-    let cartlist = [...app.globalData.cartMsg]
+    let cartlist =app.globalData.cartMsg
     // cartlist.concat(app.globalData.cartMsg)
     console.log(app.globalData.cartMsg)
-    console.log(cartlist)
+   
+    cartlist.map(e =>{
+      return e['number'] = 1
+    })
+    console.log(cartlist,"-----")
     if (cartlist.length > 0) {
       console.log(cartlist.length)
       this.setData({

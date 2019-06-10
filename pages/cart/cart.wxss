@@ -22,8 +22,8 @@ page{
 
 .orderlist .cart-thumb{
   position: absolute;
-  top: 20rpx;
-  left: 85rpx;
+  /* top: 20rpx;
+  left: 85rpx; */
   width: 185rpx;
   height: 185rpx;
 }
@@ -59,7 +59,7 @@ height: 160rpx;
 }
 .orderlist .cart-count-box{
   position: absolute;
-  left: 285rpx;
+  left: 300rpx;
   bottom: 50rpx;
   width: 250rpx;
   height: 80rpx;
@@ -75,7 +75,7 @@ height: 160rpx;
   height: 100%;
 }
 .cart-count-num{
-  width: 150rpx;
+  width: 120rpx;
 }
 .cart-del{
   position: absolute;

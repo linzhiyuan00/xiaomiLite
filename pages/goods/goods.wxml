@@ -13,7 +13,7 @@
     <view class="page_bd">
         <view class="title">{{goodsdetail.goodsname}}</view>
         <view class="desc">{{goodsdetail.goodsspecial}}</view>
-        <view class="pric">{{goodsdetail.goodsprice}}</view>
+        <view class="pric">￥{{goodsdetail.goodsprice}}</view>
     </view>
 </view>
     <view class="page_fd ">
