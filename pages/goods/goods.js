@@ -7,7 +7,7 @@ Page({
    */
   data: {
     goodsdetail: [],
-    toCartMsg: [],
+    cartMsg: [],
     person: {
       "personImg": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-data-mishop/f790b51a76afd7b41522048fa779d69d.jpg",
       "nickname": "小杰瑞",
@@ -15,28 +15,24 @@ Page({
     }
 
   },
-  // tocart: function () {
-  //   this.setData({
-  //     toCartMsg: this.data.goodds
-  //   })
-  //   app.globalData.tocartMsg.push{ url2, goodsname2, goodsspecial2, goodsprice2 } {
-  //     let detail = { url1, goodsname1, goodsspecial1, goodsprice1 }
-  //     let detail = { url1, goodsname1, goodsspecial1, goodsprice1 }
-  //     let detail = { url1, goodsname1, goodsspecial1, goodsprice1 }
-  //     let detail = { url1, goodsname1, goodsspecial1, goodsprice1 sadsdazcxzcx      url2, goodsname2, goodsspecial2, goodsprice2 : url2url2(this.data.toCartMsg);
-  //   wx.showToast({
-  //     title: '已加入购物车',
-  //     icon: 'success',
-  //     duration: 2000
-  //   })
-  // },
-
+  addcart: function () {
+    this.setData({
+      cartMsg: this.data.goodsdetail
+    })
+    app.globalData.cartMsg.push(this.data.cartMsg);
+    wx.showToast({
+      title: '已加入购物车',
+      icon: 'success',
+      duration: 2000
+    })
+  },
+ 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     this.setData({
-      gooddetail: app.goodsdetail
+      goodsdetail: app.goodsdetail
     })
   },
 

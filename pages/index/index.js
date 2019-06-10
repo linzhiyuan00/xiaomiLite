@@ -4,16 +4,39 @@ const app = getApp()
 
 Page({
   data: {
-    imgUrls: [
-      'https://i1.mifile.cn/a4/xmad_15587134858173_vcaQD.jpg',
-      'https://i1.mifile.cn/a4/xmad_15529884424562_HKYaG.jpg',
-      'https://i1.mifile.cn/a4/xmad_15586683348207_opnBm.jpg'
+    imgUrls: [  
+      {
+        url: 'https://i1.mifile.cn/a4/xmad_15587134858173_vcaQD.jpg',
+        goodsname: 'Redmi K20 Pro全网通版',
+        goodsspecial: '晓龙855 / 4700mAh锂电池',
+        goodsprice: '￥2999'
+      },
+      {
+        url: 'https://i1.mifile.cn/a4/xmad_15529884424562_HKYaG.jpg',
+        goodsname: 'Redmi Note 7 Pro',
+        goodsspecial: '4200mAh大电量 / 18个月超长质保',
+        goodsprice: '￥1599'
+      },
+      {
+        url: 'https://i1.mifile.cn/a4/xmad_15586683348207_opnBm.jpg',
+        goodsname: '65"小米电视4A',
+        goodsspecial: '4K HDR/人工智能语音系统',
+        goodsprice: '￥2799'
+      }
     ],
     interval: 3000,
     duration: 800,
     recommendtext: '人气推荐',
     searchtext: '搜索商品',
     title1: '猜你喜欢',
+    recommendbig:[
+     {
+        url:'https://i1.mifile.cn/a4/xmad_15586683348207_opnBm.jpg',
+        goodsname:'65"小米电视4A',
+        goodsspecial:'4K HDR/人工智能语音系统',
+        goodsprice:'￥2799'
+     }
+    ],
     classlist:[
       {
         imgsrc:'/images/index/img1.png',
@@ -151,14 +174,117 @@ Page({
       },
       
     ],
-
+    goodsdetail: [],
+    detail: [],
+    swiperCurrent:''
   },
-  toDetail: function (e) {
+  //轮播图的切换事件
+  swiperChange: function (e) {
+    // console.log(e.detail.current)
+    this.setData({
+      swiperCurrent: e.detail.current
+    })
+  },
+  //轮播图点击事件
+  toDetail:function(e){
+    console.log(this.data.swiperCurrent)
+    var index = this.data.swiperCurrent;
+    let detail = this.data.imgUrls[index];
+    app.goodsdetail = detail;
+    console.log(app.goodsdetail)
+    this.setData({
+      detail: detail
+    })
+   
+
+    wx.navigateTo({
+      url: '/pages/goods/goods',
+    })
+  },
+  toDetailbig: function (e) {
     // var index = e.currentTarget.dataset.index;
     // var detail = this.data.goodsList[index];
     // app.globalData.detail = detail;
     // console.log(app.globalData.detail)
+    var index = e.currentTarget.dataset.index;
+    console.log(index);
+    var { url, goodsname, goodsspecial, goodsprice } = this.data.recommendbig[index];
+    let detail = { url: url, goodsname: goodsname, goodsspecial: goodsspecial, goodsprice: goodsprice }
+    // console.log(detail);
+    app.goodsdetail = detail;
+    console.log(app.goodsdetail)
+    this.setData({
+      detail: detail
+    })
 
+
+
+    wx.navigateTo({
+      url: '/pages/goods/goods',
+    })
+  },
+  toDetailleft: function (e) {
+    var index = e.currentTarget.dataset.index1;
+    console.log(index);
+    var { url1, goodsname1, goodsspecial1, goodsprice1 } = this.data.forrecmdgoods1[index];
+    let detail = { url: url1, goodsname: goodsname1, goodsspecial: goodsspecial1, goodsprice: goodsprice1 }
+    // console.log(detail);
+    app.goodsdetail = detail;
+    console.log(app.goodsdetail)
+    this.setData({
+      detail: detail
+    })
+
+
+    wx.navigateTo({
+      url: '/pages/goods/goods',
+    })
+  },
+  toDetailright: function (e) {
+    var index = e.currentTarget.dataset.index2;
+    console.log(index);
+    var { url2, goodsname2, goodsspecial2, goodsprice2 } = this.data.forrecmdgoods1[index];
+    let detail = { url: url2, goodsname: goodsname2, goodsspecial: goodsspecial2, goodsprice: goodsprice2 }
+    // console.log(detail);
+    app.goodsdetail = detail;
+    console.log(app.goodsdetail)
+    this.setData({
+      detail: detail
+    })
+
+
+    wx.navigateTo({
+      url: '/pages/goods/goods',
+    })
+  },
+  toDetailleft1: function (e) {
+    var index = e.currentTarget.dataset.index3;
+    console.log(index);
+    var { url1, goodsname1, goodsspecial1, goodsprice1 } = this.data.forrecmdgoods2[index];
+    let detail = { url: url1, goodsname: goodsname1, goodsspecial: goodsspecial1, goodsprice: goodsprice1 }
+    // console.log(detail);
+    app.goodsdetail = detail;
+    console.log(app.goodsdetail)
+    this.setData({
+      detail: detail
+    })
+
+
+    wx.navigateTo({
+      url: '/pages/goods/goods',
+    })
+  },
+  toDetailright2: function (e) {
+    var index = e.currentTarget.dataset.index4;
+    console.log(index);
+    var { url2, goodsname2, goodsspecial2, goodsprice2 } = this.data.forrecmdgoods2[index];
+    let detail = { url: url2, goodsname: goodsname2, goodsspecial: goodsspecial2, goodsprice: goodsprice2 }
+    // console.log(detail);
+    app.goodsdetail = detail;
+    console.log(app.goodsdetail)
+    this.setData({
+      detail: detail
+    })
 
 
     wx.navigateTo({

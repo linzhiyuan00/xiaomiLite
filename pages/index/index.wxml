@@ -13,10 +13,10 @@
     </navigator>
   </view>
   <view class='hotswiper'>
-    <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+    <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true" bindchange="swiperChange">
       <block wx:for="{{imgUrls}}" wx:key="{{index}}">
         <swiper-item>
-          <image src="{{item}}" class="slide-image" width="100%" />
+          <image src="{{item.url}}" class="slide-image" width="100%"  bindtap="toDetail"/>
         </swiper-item>
       </block>
     </swiper>
@@ -37,18 +37,18 @@
       <view class='recommendtext'>
         {{recommendtext}}
       </view>
-      <view class='recommendbig' bindtap='toDetail'>
-        <image src='https://i1.mifile.cn/a4/xmad_15586683348207_opnBm.jpg'></image>
+      <view class='recommendbig' bindtap='toDetailbig' wx:for="{{recommendbig}}" data-index="{{index}}" wx:key="{{index}}">
+        <image src='{{item.url}}'></image>
         <view class='fffline'></view>
         <view class='goodsdetail'>
           <view class='goodsname'>
-            <text>65"小米电视4A</text>
+            <text>{{item.goodsname}}</text>
           </view>
           <view class='goodsspecial'>
-            <text>4K HDR/人工智能语音系统</text>
+            <text>{{item.goodsspecial}}</text>
           </view>
           <view class='goodsprice'>
-            <text>￥2799</text>
+            <text>{{item.goodsprice}}</text>
           </view>
 
         </view>
@@ -58,7 +58,7 @@
         <view wx:for="{{forrecmdgoods1}}" wx:key="{{index}}">
           <view class='bgcline'></view>
           <view class='goodsrow'>
-            <view class='goods-cell goodsdiv' bindtap='toDetail'>
+            <view class='goods-cell goodsdiv' bindtap='toDetailleft' data-index1="{{index}}">
               <view class='goods-img'>
                 <image src='{{item.url1}}'></image>
               </view>
@@ -74,7 +74,7 @@
                 </view>
               </view>
             </view>
-            <view class='goods-cell goodsdiv goodsright' bindtap='toDetail'>
+            <view class='goods-cell goodsdiv goodsright' bindtap='toDetailright' data-index2="{{index}}">
               <view class='goods-img'>
                 <image src='{{item.url2}}'></image>
               </view>
@@ -101,7 +101,7 @@
           <view class='recommendgoods'>
             <view wx:for="{{forrecmdgoods2}}" wx:key="{{index}}">
               <view class='goodsrow'>
-                <view class='goods-cell goodsdiv' bindtap='toDetail'>
+                <view class='goods-cell goodsdiv' bindtap='toDetailleft1' data-index3="{{index}}">
                   <view class='goods-img'>
                     <image src='{{item.url1}}'></image>
                   </view>
@@ -117,7 +117,7 @@
                     </view>
                   </view>
                 </view>
-                <view class='goods-cell goodsdiv goodsright' bindtap='toDetail'>
+                <view class='goods-cell goodsdiv goodsright' bindtap='toDetailright2' data-index4="{{index}}">
                   <view class='goods-img'>
                     <image src='{{item.url2}}'></image>
                   </view>

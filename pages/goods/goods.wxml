@@ -5,15 +5,15 @@
         <swiper class="section" indicator-dots="true" indicator-active-color="#fff" autoplay="true" interval="4000" duration="500">
             <block>
                 <swiper-item>
-                    <image src="{{gooddetail.url}}" />
+                    <image src="{{goodsdetail.url}}" />
                 </swiper-item>
             </block>
         </swiper>
     </view>
     <view class="page_bd">
-        <view class="title">{{gooddetail.goodsname}}</view>
-        <view class="desc">{{gooddetail.goodsspecial}}</view>
-        <view class="pric">{{gooddetail.goodsprice}}</view>
+        <view class="title">{{goodsdetail.goodsname}}</view>
+        <view class="desc">{{goodsdetail.goodsspecial}}</view>
+        <view class="pric">{{goodsdetail.goodsprice}}</view>
     </view>
 </view>
     <view class="page_fd ">
@@ -51,7 +51,7 @@
         <view class="image">
             <image src="../../images/system-icon/goodscarton.png"/>
         </view>
-        <text class="order" bindtap="tocart">
+        <text class="order" bindtap="addcart">
             加入购物车
         </text>
         <text class="buy1">

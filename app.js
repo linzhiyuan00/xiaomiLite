@@ -36,7 +36,7 @@ App({
   globalData: {
     userInfo: null,
     goodsdetail: [],
-    tocartMsg: []
+    cartMsg: []
   },
   // detailData:{
   //   shouji:[
