@@ -4,6 +4,10 @@ page{
   height: 100%;
   background-color: #ebebeb;
 }
+.main{
+  height: 1030rpx;
+  overflow: hidden;
+}
 .orderlist{
   position: relative;
   width: 710rpx;
@@ -39,10 +43,11 @@ height: 160rpx;
 .orderlist .cart-pro-name{
   display: inline-block;
   position: absolute;
-  width: 300rpx;
+  width: 400rpx;
   line-height: 50rpx;
   left: 300rpx;
   top: 50rpx;
+  text-align: center;
   overflow: hidden;
   font-size: 34rpx;
   color: red;
@@ -50,19 +55,21 @@ height: 160rpx;
 .orderlist .cart-pro-price{
   display: inline-block;
   position: absolute;
-  left: 550rpx;
-  top: 50rpx;
+  left: 300rpx;
+  top: 130rpx;
   font-size: 40rpx;
-  width: 100rpx;
+  width: 400rpx;
+  text-align: center;
   line-height: 50rpx;
 
 }
 .orderlist .cart-count-box{
   position: absolute;
   left: 300rpx;
-  bottom: 50rpx;
+  bottom: 20rpx;
   width: 250rpx;
   height: 80rpx;
+  color: red;
 }
 .orderlist .cart-count-box text{
   display: inline-block;
@@ -73,19 +80,21 @@ height: 160rpx;
   font-size: 44rpx;
   width: 50rpx;
   height: 100%;
+  color: red;
 }
 .cart-count-num{
   width: 120rpx;
+   color: #000000;
 }
 .cart-del{
   position: absolute;
   right: 20rpx;
-  bottom: 20rpx;
+  bottom: 10rpx;
   width: 80rpx;
   height: 80rpx;
   line-height: 80rpx;
   text-align: center;
-  font-size: 44rpx;
+  font-size: 28rpx;
   color: red;
 }
 

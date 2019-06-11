@@ -7,24 +7,42 @@ Page({
    */
   data: {
     goodsdetail: [],
-    cartMsg: [],
+    cartmsg: [],
     person: {
       "personImg": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-data-mishop/f790b51a76afd7b41522048fa779d69d.jpg",
       "nickname": "小杰瑞",
       "content": "高大上。这是一个好评模板，因为本仙女很懒，不想每个产品都写好评，所以特地模仿别的仙女写下这个模板，但是这个产品无论是质量还是外形都是本仙女喜欢的类型，如果不喜欢，仙女收到东西会很生气，然后这个模板就会成为仙女喋喋不休的休书，自然不可能撒下这个好评，给各位淘友一个参考，本产品还是极好的，——来自一位慵懒的只爱购物不爱写评语却想换积分的仙女！好吧，说真的，很好，喜欢。国货之光"
-    }
+    },
+    addcartsuccess:false
 
   },
   addcart: function () {
     this.setData({
-      cartMsg: this.data.goodsdetail
+      cartmsg: this.data.goodsdetail
     })
-    app.globalData.cartMsg.push(this.data.cartMsg);
-    wx.showToast({
-      title: '已加入购物车',
-      icon: 'success',
-      duration: 2000
-    })
+    const nowgoodsname = this.data.goodsdetail.goodsname
+    const addcartsuccess = this.data.addcartsuccess
+    const cartMsg = app.globalData.cartMsg
+    console.log(cartMsg)
+    
+    if(addcartsuccess == true){
+      wx.showToast({
+        title: '您已加入购物车',
+        icon: 'success',
+        duration: 2000
+      })
+    }else{
+      app.globalData.cartMsg.push(this.data.cartmsg);
+      wx.showToast({
+        title: '成功加入购物车',
+        icon: 'success',
+        duration: 2000
+      })
+      this.setData({
+        addcartsuccess: true
+      })
+    }
+    
   },
  
   /**
@@ -34,6 +52,17 @@ Page({
     this.setData({
       goodsdetail: app.goodsdetail
     })
+    const nowgoodsname = this.data.goodsdetail.goodsname
+    const addcartsuccess = this.data.addcartsuccess
+    const cartMsg = app.globalData.cartMsg
+    for (let i = 0; i < cartMsg.length; i++) {
+      if (cartMsg[i].goodsname == nowgoodsname) {
+        this.setData({
+          addcartsuccess: true
+        })
+        console.log(this.data.addcartsuccess)
+      }
+    }
   },
 
   /**

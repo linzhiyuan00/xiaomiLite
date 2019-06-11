@@ -42,6 +42,7 @@ Page({
     this.setData({
       cartlist
     })
+    this.getTotalPrice()
   },
   addCount: function (e) {
     let cartlist = this.data.cartlist;
@@ -54,6 +55,7 @@ Page({
     this.setData({
       cartlist
     })
+    this.getTotalPrice()
   },
   selectAll: function (e) {
     let selectAllStatus = this.data.selectAllStatus;
@@ -120,20 +122,24 @@ Page({
   },
   fff() {
     let cartlist =app.globalData.cartMsg
-    // cartlist.concat(app.globalData.cartMsg)
-    console.log(app.globalData.cartMsg)
-   
-    cartlist.map(e =>{
-      return e['number'] = 1
-    })
-    console.log(cartlist,"-----")
+    // console.log(app.globalData.cartMsg)
+    for(let i =0;i<cartlist.length;i++){
+      if (!cartlist[i].number) {
+        cartlist.map(e => {
+          return e['number'] = 1
+        })
+      }
+    }
+    
+    
+    // console.log(cartlist,"-----")
     if (cartlist.length > 0) {
-      console.log(cartlist.length)
+      // console.log(cartlist.length)
       this.setData({
         flag: true,
         cartlist
       })
-      console.log(this.data.flag)
+      // console.log(this.data.flag)
     }
   },
 
@@ -151,12 +157,21 @@ Page({
     //   })
     // }
 
+    app.globalData.cartMsg = wx.getStorageSync('cartlist')
+    let cart = app.globalData.cartMsg
+    this.setData({
+      cartlist: cart
+    })
+    // console.log(this.data.cartlist)
+    
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    
 
   },
 
@@ -165,12 +180,15 @@ Page({
    */
   onShow: function () {
     this.fff()
+    
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
+    const cartlist = this.data.cartlist
+     wx.setStorageSync('cartlist', cartlist)
 
   },
 
