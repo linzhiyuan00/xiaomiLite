@@ -9,22 +9,21 @@
     </view>
   </view>
   <view class='mianpage'>
-    <view class='recommendbig'>
-      <navigator>
-        <image src='https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ef90dec5a8c8d76456a83da570113732.jpg?w=1708&h=868'></image>
+    <view class='recommendbig' bindtap='toDetailbig' wx:for="{{recommendbig}}" data-index="{{index}}" wx:key="{{index}}">
+        <image src='{{item.url}}'></image>
         <view class='fffline'></view>
         <view class='goodsdetail-big'>
           <view class='box-left'>
             <view class='goodsname-big'>
-              <text>小米电视4 55英寸</text>
+              <text>{{item.goodsname}}</text>
             </view>
             <view class='goodsspecial-big'>
-              <text>4.99mm 超极薄机身，人工智能语音</text>
+              <text>{{item.goodsspecial}}</text>
             </view>
           </view>
           <view class='box-right'>
             <view class='goodsprice-big'>
-              <text>￥3699</text>
+              <text>￥{{item.goodsprice}}</text>
             </view>
             <view class='buyright'>
               <view class='text-box'>
@@ -35,14 +34,12 @@
 
         </view>
         <view class='fffline'></view>
-      </navigator>
     </view>
     <view class='recommendgoods'>
-      <view wx:for="{{forrecmdgoods1}}" wx:key="{{index}}">
+      <view wx:for="{{forrecmdgoods1}}" wx:key="{{index}}" >
         <view class='bgcline'></view>
         <view class='goodsrow'>
-          <view class='goods-cell goodsdiv'>
-            <navigator>
+          <view class='goods-cell goodsdiv' bindtap='toDetailleft' data-index1="{{index}}">
               <view class='goods-img'>
                 <image src='{{item.url1}}'></image>
               </view>
@@ -54,7 +51,7 @@
                   <text>{{item.goodsspecial1}}</text>
                 </view>
                 <view class='goodsprice'>
-                  <text>{{item.goodsprice1}}</text>
+                  <text>￥{{item.goodsprice1}}</text>
                 </view>
                 <view class='lijibuy'>
                   <view class='buy-box'>
@@ -64,10 +61,8 @@
                   </view>
                 </view>
               </view>
-            </navigator>
           </view>
-          <view class='goods-cell goodsdiv goodsright'>
-            <navigator>
+          <view class='goods-cell goodsdiv goodsright' bindtap='toDetailright' data-index2="{{index}}">
               <view class='goods-img'>
                 <image src='{{item.url2}}'></image>
               </view>
@@ -79,7 +74,7 @@
                   <text>{{item.goodsspecial2}}</text>
                 </view>
                 <view class='goodsprice'>
-                  <text>{{item.goodsprice2}}</text>
+                  <text>￥{{item.goodsprice2}}</text>
                 </view>
                 <view class='lijibuy'>
                   <view class='buy-box'>
@@ -89,7 +84,6 @@
                   </view>
                 </view>
               </view>
-            </navigator>
           </view>
         </view>
       </view>

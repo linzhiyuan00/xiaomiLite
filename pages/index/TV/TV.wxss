@@ -172,7 +172,7 @@ page, .main {
   height: 60rpx;
   font-size: 36rpx;
   text-align: center;
-  /* background-color: #ffffff; */
+  line-height: 60rpx;
 }
 .buy-box{
   height: 100%;
@@ -183,5 +183,4 @@ page, .main {
 .text-box{
   height: 100%;
   width: 100%;
-  padding: 10rpx 0 0 0;
 }

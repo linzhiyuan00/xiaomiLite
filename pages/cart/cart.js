@@ -121,8 +121,8 @@ Page({
 
   },
   fff() {
-    let cartlist =app.globalData.cartMsg
-    // console.log(app.globalData.cartMsg)
+    let cartlist = app.globalData.cartMsg
+    console.log(app.globalData.cartMsg)
     for(let i =0;i<cartlist.length;i++){
       if (!cartlist[i].number) {
         cartlist.map(e => {
@@ -147,21 +147,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // this.setData({
-    //   cartlist: [...app.globalData.addcart]
-    // })
-    // console.log(this.data.cartlist)
-    // if (this.data.cartlist.length > 0) {
-    //   this.setData({
-    //     flag: true
-    //   })
-    // }
 
-    app.globalData.cartMsg = wx.getStorageSync('cartlist')
-    let cart = app.globalData.cartMsg
-    this.setData({
-      cartlist: cart
-    })
+    if (wx.getStorageSync('cartMsg')){
+      app.globalData.cartMsg = wx.getStorageSync('cartMsg')
+      this.setData({
+        cartlist: app.globalData.cartMsg
+      })
+    }
+    
     // console.log(this.data.cartlist)
     
 
@@ -179,6 +172,13 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+   
+    if (app.globalData.cartMsg.length > 0) {
+      const cartMsg = app.globalData.cartMsg
+      wx.setStorageSync('cartMsg', cartMsg)
+    }else{
+    }
+
     this.fff()
     
   },
@@ -187,9 +187,8 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    const cartlist = this.data.cartlist
-     wx.setStorageSync('cartlist', cartlist)
-
+   
+    
   },
 
   /**

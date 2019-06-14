@@ -1,4 +1,6 @@
 // pages/index/TV/TV.js
+const app = getApp()
+
 Page({
 
   /**
@@ -8,55 +10,81 @@ Page({
     interval: 3000,
     duration: 800,
     tvimg:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/728c70c3c643f962b2f4ed8d9cd2c4fd.jpg?w=5120&h=1811&bg=FFFFFF',
-    forrecmdgoods1: [
-      {
-        url1: 'https://i8.mifile.cn/b2c-mimall-media/5c50bdc81439be902db6e34a89b785b9.jpg?w=1212&h=716',
-        goodsname1: '小米电视4A 65英寸',
-        goodsspecial1: '4K HDR,人工智能语音系统',
-        goodsprice1: '￥2849',
-        url2: 'https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/155f9177de5a5af28936574b8e676348.jpg?w=1212&h=716',
-        goodsname2: '激光投影电视 4K',
-        goodsspecial2: '超短焦，在家看巨幕',
-        goodsprice2: '￥9999',
-      },
-      {
-        url1: 'https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/1a7b7a3906d7e52846746729a00763d1.jpg?w=1080&h=720',
-        goodsname1: '小米电视4S 75英寸',
-        goodsspecial1: '4K HDR，人工智能语音',
-        goodsprice1: '￥7999',
-        url2: 'https://i8.mifile.cn/b2c-mimall-media/7d4d94788f8591e5557a4c23c3ba4307.jpg?w=1080&h=1080',
-        goodsname2: '小米电视4A 58英寸',
-        goodsspecial2: '4K HDR，人工智能语音系统',
-        goodsprice2: '￥2499',
-      },
-      {
-        url1: 'https://i8.mifile.cn/b2c-mimall-media/ef288021164c70da7744f4f23702ed41.jpg?w=1080&h=1080',
-        goodsname1: '小米电视4X 43英寸',
-        goodsspecial1: 'FHD全高清屏，人工智能语音',
-        goodsprice1: '￥1299',
-        url2: 'https://i8.mifile.cn/b2c-mimall-media/4aa77a674400f1b836b33ba1d54a8d23.jpg?w=1080&h=1080',
-        goodsname2: '小米电视4C 40英寸',
-        goodsspecial2: 'FHD全高清屏，钢琴烤漆',
-        goodsprice2: '￥1099',
-      },
-      {
-        url1: 'https://i8.mifile.cn/b2c-mimall-media/0453a7ac57c18ede3533f4d5cf6acb90.jpg?w=1080&h=1080',
-        goodsname1: '小米电视4S 65英寸',
-        goodsspecial1: '4K HDR，2GB+16GB大储存',
-        goodsprice1: '￥4299',
-        url2: 'https://i8.mifile.cn/b2c-mimall-media/c3b64f0f9981ebfbbb6a12eee40ff049.jpg?w=1080&h=1080',
-        goodsname2: '小米电视4S 65英寸',
-        goodsspecial2: '4K HDR，人工智能语音',
-        goodsprice2: '￥3999',
-      }
-    ],
+    forrecmdgoods1: [],
+    recommendbig:[],
+    detail: [],
+  },
+  toDetailbig: function (e) {
+    // var index = e.currentTarget.dataset.index;
+    // var detail = this.data.goodsList[index];
+    // app.globalData.detail = detail;
+    // console.log(app.globalData.detail)
+    var index = e.currentTarget.dataset.index;
+    console.log(index);
+    var { url, goodsname, goodsspecial, goodsprice } = this.data.recommendbig[index];
+    let detail = { url: url, goodsname: goodsname, goodsspecial: goodsspecial, goodsprice: goodsprice }
+    // console.log(detail);
+    app.goodsdetail = detail;
+    console.log(app.goodsdetail)
+    this.setData({
+      detail: detail
+    })
 
+
+
+    wx.navigateTo({
+      url: '/pages/goods/goods',
+    })
+  },
+  toDetailleft: function (e) {
+    var index = e.currentTarget.dataset.index1;
+    console.log(index);
+    var { url1, goodsname1, goodsspecial1, goodsprice1 } = this.data.forrecmdgoods1[index];
+    let detail = { url: url1, goodsname: goodsname1, goodsspecial: goodsspecial1, goodsprice: goodsprice1 }
+    // console.log(detail);
+    app.goodsdetail = detail;
+    console.log(app.goodsdetail)
+    this.setData({
+      detail: detail
+    })
+
+
+    wx.navigateTo({
+      url: '/pages/goods/goods',
+    })
+  },
+  toDetailright: function (e) {
+    var index = e.currentTarget.dataset.index2;
+    console.log(index);
+    var { url2, goodsname2, goodsspecial2, goodsprice2 } = this.data.forrecmdgoods1[index];
+    let detail = { url: url2, goodsname: goodsname2, goodsspecial: goodsspecial2, goodsprice: goodsprice2 }
+    // console.log(detail);
+    app.goodsdetail = detail;
+    console.log(app.goodsdetail)
+    this.setData({
+      detail: detail
+    })
+
+
+    wx.navigateTo({
+      url: '/pages/goods/goods',
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.request({
+      url: 'https://www.easy-mock.com/mock/5d030bd22c61271f2b41de46/TV-data',
+      success: (res) => {
+        this.setData({
+          recommendbig: res.data.recommendbig,
+          forrecmdgoods1: res.data.forrecmdgoods1
+        })
+        // console.log(this.data.detail)
+      }
+    })
 
   },
 

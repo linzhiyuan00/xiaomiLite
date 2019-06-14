@@ -8,7 +8,7 @@
 .goodsList .big {
   display: block;
   width: 750rpx;
-  height: 520rpx;
+  height: 530rpx;
 }
 
 .bgcline {
@@ -23,6 +23,7 @@
   /* background: red; */
   box-sizing: border-box;
   margin-left: 10rpx;
+  background: #ffffff;
 }
 
 .goodsList .big image {
@@ -34,7 +35,7 @@
 .goodsList .big .goodsText {
   display: block;
   width: 750rpx;
-  height: 120rpx;
+  height: 130rpx;
   background: #ffffff;
 }
 .box-left {
@@ -91,7 +92,6 @@
  .goodsList .big .goodsText .text-box {
   height: 100%;
   width: 100%;
-  padding: 10rpx 0 0 0;
 }
 
 .goodsList .goods-Box image{
@@ -99,11 +99,12 @@
   height: 360rpx;
 }
 .goodsList .goods-Box .goodsText{
-  height: 200rpx;
+  height: 230rpx;
   width: 360rpx;
   text-align: center;
   /* background-color: green; */
   background: #ffffff;
+  border-top:1px solid #dbdbdb;
 }
 .goodsList .goods-Box .goodsText .title{
   /* display: block; */
@@ -136,8 +137,6 @@
 
 .goodsList .goods-Box .goodsText .lijibuy {
   height: 50rpx;
-  font-size: 36rpx;
-  /* text-align: center; */
 }
 
  .goodsList .goods-Box .goodsText .buy-box {
@@ -145,12 +144,15 @@
   width: 200rpx;
   margin: 0 80rpx 0 80rpx;
   background-color: #ea625b;
+
 }
 
  .goodsList .goods-Box .goodsText .text-box {
   height: 100%;
   width: 100%;
-  padding: 0 0 0 0;
+  font-size: 36rpx;
+  line-height: 50rpx;
+  text-align: center;
 }
 .goodsList .goods-Box .goodsText .box-left{
   float: none;

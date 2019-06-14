@@ -32,6 +32,7 @@ Page({
         duration: 2000
       })
     }else{
+      console.log(app.globalData.cartMsg)
       app.globalData.cartMsg.push(this.data.cartmsg);
       wx.showToast({
         title: '成功加入购物车',

@@ -1,4 +1,6 @@
 // pages/index/PC/PC.js
+const app = getApp()
+
 Page({
 
   /**
@@ -7,60 +9,111 @@ Page({
   data: {
     interval: 3000,
     duration: 800,
-    imgUrls: [
-      'https://i8.mifile.cn/b2c-mimall-media/56eff7d64d93efa99557746d24588492.jpg?w=1708&h=868',
-      'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f3f5055d342590a4767ada17012539d8.jpg?w=1708&h=868',
-      'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5ebb816860246cea19e7178016b6adb2.jpg?w=1708&h=868'
-    ],
-    forrecmdgoods1: [
-      {
-        url1: 'https://i8.mifile.cn/b2c-mimall-media/1a3a356b8a951d73450e73ef6c353006.jpg?w=1212&h=716',
-        goodsname1: '游戏本i7 GTX1060',
-        goodsspecial1: '性能怪兽 信仰级游戏体验',
-        goodsprice1: '7999元起',
-        url2: 'https://i8.mifile.cn/b2c-mimall-media/0c011f201a8132acd12743b49240410b.jpg?w=1212&h=716',
-        goodsname2: 'Pro15.6" i5 GTX1050',
-        goodsspecial2: '更强悍的专业笔记本	',
-        goodsprice2: '6299元起',
-      },
-      {
-        url1: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fbee6b7917578b188f8d338b15c8cc93.jpg?w=1212&h=716',
-        goodsname1: 'Air 12.5" 2019款',
-        goodsspecial1: '像杂志一样随身携带',
-        goodsprice1: '3599元起',
-        url2: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7b5e50495e27667efadc28ba70515ea6.jpg?w=1212&h=716',
-        goodsname2: 'Air 13.3" 2019款',
-        goodsspecial2: '新一代独立显卡',
-        goodsprice2: '4799元起',
-      },
-      {
-        url1: 'https://i8.mifile.cn/b2c-mimall-media/ff4edd81f30c7f20abed2def6b63b929.jpg?w=1212&h=716',
-        goodsname1: 'Pro 15.6" GTX版',
-        goodsspecial1: '更强悍的专业笔记本',
-        goodsprice1: '6299元起',
-        url2: 'https://i8.mifile.cn/b2c-mimall-media/1a3a356b8a951d73450e73ef6c353006.jpg?w=1212&h=716',
-        goodsname2: '小米游戏本',
-        goodsspecial2: '冷酷的性能怪兽	',
-        goodsprice2: '6499元起',
-      },
-      {
-        url1: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c2e79d63264207b572a36a3bf1afc091.jpg?w=1212&h=716',
-        goodsname1: '笔记本15.6"  独显版',
-        goodsspecial1: '全面均衡的国民轻薄本',
-        goodsprice1: '3999元起',
-        url2: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7b5e50495e27667efadc28ba70515ea6.jpg?w=1212&h=716',
-        goodsname2: 'Air 13.3" i5 MX250',
-        goodsspecial2: 'i5处理器 新一代独立显卡',
-        goodsprice2: '5399元起',
-      }
-    ],
+    imgUrls: [],
+    recommendbig:[],
+    forrecmdgoods1: [],
+    goodsdetail: [],
+    detail: [],
+    swiperCurrent: ''
 
+  },
+  //轮播图的切换事件
+  swiperChange: function (e) {
+    // console.log(e.detail.current)
+    this.setData({
+      swiperCurrent: e.detail.current
+    })
+  },
+  //轮播图点击事件
+  toDetail: function (e) {
+    console.log(this.data.swiperCurrent)
+    var index = this.data.swiperCurrent;
+    let detail = this.data.imgUrls[index];
+    app.goodsdetail = detail;
+    console.log(app.goodsdetail)
+    this.setData({
+      detail: detail
+    })
+
+
+    wx.navigateTo({
+      url: '/pages/goods/goods',
+    })
+  },
+
+  toDetailbig: function (e) {
+    // var index = e.currentTarget.dataset.index;
+    // var detail = this.data.goodsList[index];
+    // app.globalData.detail = detail;
+    // console.log(app.globalData.detail)
+    var index = e.currentTarget.dataset.index;
+    console.log(index);
+    var { url, goodsname, goodsspecial, goodsprice } = this.data.recommendbig[index];
+    let detail = { url: url, goodsname: goodsname, goodsspecial: goodsspecial, goodsprice: goodsprice }
+    // console.log(detail);
+    app.goodsdetail = detail;
+    console.log(app.goodsdetail)
+    this.setData({
+      detail: detail
+    })
+
+
+
+    wx.navigateTo({
+      url: '/pages/goods/goods',
+    })
+  },
+  toDetailleft: function (e) {
+    var index = e.currentTarget.dataset.index1;
+    console.log(index);
+    var { url1, goodsname1, goodsspecial1, goodsprice1 } = this.data.forrecmdgoods1[index];
+    let detail = { url: url1, goodsname: goodsname1, goodsspecial: goodsspecial1, goodsprice: goodsprice1 }
+    // console.log(detail);
+    app.goodsdetail = detail;
+    console.log(app.goodsdetail)
+    this.setData({
+      detail: detail
+    })
+
+
+    wx.navigateTo({
+      url: '/pages/goods/goods',
+    })
+  },
+  toDetailright: function (e) {
+    var index = e.currentTarget.dataset.index2;
+    console.log(index);
+    var { url2, goodsname2, goodsspecial2, goodsprice2 } = this.data.forrecmdgoods1[index];
+    let detail = { url: url2, goodsname: goodsname2, goodsspecial: goodsspecial2, goodsprice: goodsprice2 }
+    // console.log(detail);
+    app.goodsdetail = detail;
+    console.log(app.goodsdetail)
+    this.setData({
+      detail: detail
+    })
+
+
+    wx.navigateTo({
+      url: '/pages/goods/goods',
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.request({
+      url: 'https://www.easy-mock.com/mock/5d030bd22c61271f2b41de46/PC-data',
+      success: (res) => {
+        this.setData({
+          imgUrls: res.data.imgUrls,
+          recommendbig: res.data.recommendbig,
+          forrecmdgoods1: res.data.forrecmdgoods1
+        })
+        // console.log(this.data.detail)
+      }
+    })
+
 
   },
 
