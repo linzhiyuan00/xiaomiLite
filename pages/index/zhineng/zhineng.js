@@ -5,14 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    goodsList: [],
+    zhinnegimg: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/072c5ffed257614e43ddba4e38b14760.jpg?w=1708&h=868'
   },
+
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.request({
+      url: 'https://www.easy-mock.com/mock/5d030bd22c61271f2b41de46/zhinneg-data',
+      success: (res) => {
+        this.setData({
+          goodsList: res.data.goodsList,
+        })
+        // console.log(this.data.detail)
+      }
+    })
   },
 
   /**

@@ -1,1 +1,34 @@
 /* pages/index/zhenxuan/zhenxuan.wxss */
+.swiper-box {
+  height: 350rpx;
+  width: 100%;
+}
+
+swiper {
+  height: 350rpx;
+}
+
+swiper-item {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.hottext {
+  height: 140rpx;
+  width: 100%;
+  /* background-color: #ffffff; */
+}
+
+.textbaokuan {
+  height: 60rpx;
+  width: 200rpx;
+  text-align: center;
+  padding: 40rpx 275rpx;
+  color: #66ff66;
+  font-size: 40rpx;
+}

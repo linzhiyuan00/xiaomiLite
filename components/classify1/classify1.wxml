@@ -2,14 +2,14 @@
 <view class='goodsList' wx:for='{{goodsList}}' wx:key='{{index}}'>
   <view class='bgcline'></view>
   <view class=" {{item.big ? 'big' : 'goods-Box'}}" data-index='{{index}}' bindtap='toDetail' style=''>
-    <image src="{{item.imgurl}}" />
+    <image src="{{item.url}}" />
     <view class="goodsText">
     <view class='box-left'>
-      <text class="title">{{item.title}}</text>
-      <text class="disc">{{item.desc}}</text>
+      <text class="title">{{item.goodsname}}</text>
+      <text class="disc">{{item.goodsspecial}}</text>
     </view>
     <view class='box-right'>
-      <text class="price">{{item.price}}</text>
+      <text class="price">￥{{item.goodsprice}}</text>
       <view class='lijibuy'>
         <view class='buy-box'>
           <view class='text-box'>

@@ -1,2 +1,10 @@
 <!--pages/index/jiadian/jiadian.wxml-->
+<view class='swiper-box'>
+    <image src="{{jiadianimg}}"  />
+  </view>
+  <view class='hottext'>
+    <view class='textbaokuan'>
+      <text>大家都在买</text>
+    </view>
+  </view>
 <classify1 id="classify1" goodsList="{{goodsList}}"></classify1>

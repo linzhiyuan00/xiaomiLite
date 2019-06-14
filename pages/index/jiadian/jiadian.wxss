@@ -1,1 +1,24 @@
 /* pages/index/jiadian/jiadian.wxss */
+.swiper-box {
+  height: 350rpx;
+  width: 100%;
+}
+.swiper-box image {
+  width: 100%;
+  height: 100%;
+}
+
+.hottext {
+  height: 140rpx;
+  width: 100%;
+  /* background-color: #ffffff; */
+}
+
+.textbaokuan {
+  height: 60rpx;
+  width: 200rpx;
+  text-align: center;
+  padding: 40rpx 275rpx;
+  color: #FFD700;
+  font-size: 40rpx;
+}

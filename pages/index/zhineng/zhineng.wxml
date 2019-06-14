@@ -1,2 +1,11 @@
 <!--pages/index/zhineng/zhineng.wxml-->
-<text>pages/index/zhineng/zhineng.wxml</text>
+<view class='swiper-box'>
+    <image src="{{zhinnegimg}}"  />
+  </view>
+  <view class='hottext'>
+    <view class='textbaokuan'>
+      <text>热卖爆品</text>
+    </view>
+  </view>
+<classify1 id="classify1" goodsList="{{goodsList}}"></classify1>
+

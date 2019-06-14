@@ -5,55 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-    goodsList: [
-      {
-        big: true,
-        imgurl: 'https://i1.mifile.cn/a4/xmad_15586661012003_thOfZ.jpg',
-        title: '小米9 闪电行动',
-        desc: '6GB + 12GB版本 ',
-        price: '$2999',
-        buy: '立即购买'
-      },
-      {
-        big: false,
-        imgurl: 'https://i1.mifile.cn/a1/pms_1550642182.7527088!220x220.jpg',
-        title: '小米9 闪电行动',
-        desc: '6GB + 12GB版本 ',
-        price: '$2999',
-        buy: '立即购买'
-      },
-      {
-        big: false,
-        imgurl: 'https://i1.mifile.cn/a1/pms_1550642182.7527088!220x220.jpg',
-        title: '小米9 闪电行动',
-        desc: '6GB + 12GB版本 ',
-        price: '$2999',
-        buy: '立即购买'
-      },
-      {
-        big: false,
-        imgurl: 'https://i1.mifile.cn/a1/pms_1550642182.7527088!220x220.jpg',
-        title: '小米9 闪电行动',
-        desc: '6GB + 12GB版本 ',
-        price: '$2999',
-        buy: '立即购买'
-      },
-      {
-        big: false,
-        imgurl: 'https://i1.mifile.cn/a1/pms_1550642182.7527088!220x220.jpg',
-        title: '小米9 闪电行动',
-        desc: '6GB + 12GB版本 ',
-        price: '$2999',
-        buy: '立即购买'
-      }
-    ],
+    goodsList: [],
+    jiadianimg:'https://i8.mifile.cn/b2c-mimall-media/80319115980df09cdea5bc861911bdd5.jpg?w=1212&h=716'
   },
+  
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    wx.request({
+      url: 'https://www.easy-mock.com/mock/5d030bd22c61271f2b41de46/jiadian-data',
+      success: (res) => {
+        this.setData({
+          goodsList: res.data.goodsList,
+        })
+        // console.log(this.data.detail)
+      }
+    })
   },
 
   /**
