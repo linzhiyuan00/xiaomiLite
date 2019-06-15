@@ -1,4 +1,9 @@
 <!--pages/classify/classify.wxml-->
+<!-- / 引入自定义组价。'navbar-data'中navbar是自定义名字，决定了组件中'navbarData'的名字 -->
+<!-- <nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='home-page' style='margin-top: {{height}}px'>
+</view> -->
+
 <view class='main'>
   <view class='classify-left'>
     <view wx:for="{{classify}}" wx:key="{{classify.id}}" data-id='{{item.id}}' data-index='{{index}}' bindtap='switchTab' class="classify-list {{curIndex == index ?'on':'' }}">

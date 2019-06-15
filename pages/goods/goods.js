@@ -27,8 +27,8 @@ Page({
     
     if(addcartsuccess == true){
       wx.showToast({
-        title: '您已加入购物车',
-        icon: 'success',
+        title: '已经加入购物车!',
+        icon: 'none',
         duration: 2000
       })
     }else{

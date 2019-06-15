@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#f8f8f8",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "电视频道",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
 }

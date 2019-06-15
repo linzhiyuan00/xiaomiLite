@@ -1,5 +1,10 @@
 {
   "usingComponents": {
       "classify1": "/components/classify1/classify1"
-  }
+  },
+  "navigationBarBackgroundColor": "#f8f8f8",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "家电",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
 }

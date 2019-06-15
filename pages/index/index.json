@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "classify1":"/components/classify1/classify1"
-  }
+    "classify1": "/components/classify1/classify1",
+    "nav-bar": "/components/navbar/navbar"
+}
 }

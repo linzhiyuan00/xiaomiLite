@@ -4,26 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    imgUrls: [  
-      // {
-      //   url: 'https://i1.mifile.cn/a4/xmad_15587134858173_vcaQD.jpg',
-      //   goodsname: 'Redmi K20 Pro全网通版',
-      //   goodsspecial: '晓龙855 / 4700mAh锂电池',
-      //   goodsprice: '2999'
-      // },
-      // {
-      //   url: 'https://i1.mifile.cn/a4/xmad_15529884424562_HKYaG.jpg',
-      //   goodsname: 'Redmi Note 7 Pro',
-      //   goodsspecial: '4200mAh大电量 / 18个月超长质保',
-      //   goodsprice: '1599'
-      // },
-      // {
-      //   url: 'https://i1.mifile.cn/a4/xmad_15586683348207_opnBm.jpg',
-      //   goodsname: '65"小米电视4A',
-      //   goodsspecial: '4K HDR/人工智能语音系统',
-      //   goodsprice: '2799'
-      // }
-    ],
+    imgUrls: [],
     interval: 3000,
     duration: 800,
     recommendtext: '人气推荐',
@@ -86,7 +67,20 @@ Page({
     forrecmdgoods2:[],
     goodsdetail: [],
     detail: [],
-    swiperCurrent:''
+    swiperCurrent:'',
+    goodsList: [],
+
+
+    // 组件所需的参数
+    nvabarData: {
+      showCapsule: 0, //是否显示左上角图标   1表示显示    0表示不显示
+      title: '小米Lite', //导航栏 中间的标题
+    },
+
+    // 此页面 页面内容距最顶部的距离
+    height: app.globalData.height * 2 + 20,
+
+    
   },
 
   /**
@@ -100,7 +94,8 @@ Page({
           imgUrls: res.data.imgUrls,
           recommendbig: res.data.recommendbig,
           forrecmdgoods1: res.data.forrecmdgoods1,
-          forrecmdgoods2: res.data.forrecmdgoods2
+          forrecmdgoods2: res.data.forrecmdgoods2,
+          goodsList: res.data.goodsList
         })
         // console.log(this.data.detail)
       }

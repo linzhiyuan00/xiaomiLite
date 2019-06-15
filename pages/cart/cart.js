@@ -20,8 +20,7 @@ Page({
       //   number:'1',
       //   price:'18'
       // }
-    ]
-
+    ],
 
   },
   minusCount: function (e) {
@@ -187,7 +186,8 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-   
+    const cartMsg = app.globalData.cartMsg
+    wx.setStorageSync('cartMsg', cartMsg)
     
   },
 

@@ -1,4 +1,6 @@
 // pages/classify/classify.js
+const app = getApp()
+
 Page({
 
   /**
@@ -916,7 +918,15 @@ Page({
         ]
       },
 
-    ]
+    ],
+    // 组件所需的参数
+    nvabarData: {
+      showCapsule: 1, //是否显示左上角图标   1表示显示    0表示不显示
+      title: '小米Lite', //导航栏 中间的标题
+    },
+
+    // 此页面 页面内容距最顶部的距离
+    height: app.globalData.height * 2 + 20,
     
   },
   switchTab(e) {

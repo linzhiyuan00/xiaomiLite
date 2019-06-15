@@ -16,7 +16,7 @@
     <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true" bindchange="swiperChange">
       <block wx:for="{{imgUrls}}" wx:key="{{index}}">
         <swiper-item>
-          <image src="{{item.url}}" class="slide-image" width="100%"  bindtap="toDetail"/>
+          <image src="{{item.url}}" class="slide-image" width="100%" bindtap="toDetail" />
         </swiper-item>
       </block>
     </swiper>
@@ -143,7 +143,13 @@
     </view>
     <view class='mainbgcline'></view>
 
-  </view>
-</view>
+    <view class='recommendtext'>
+      品质之选
+    </view>
 
-<!-- <classify1 id="classify1"></classify1> -->
+    <classify1 id="classify1" goodsList="{{goodsList}}"></classify1>
+
+
+  </view>
+
+</view>
