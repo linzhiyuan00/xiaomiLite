@@ -1,21 +1,18 @@
 <!--pages/discover/discover.wxml-->
 <view class='main'>
   <view class='head'>
-    <view class='head-box' wx:for="{{head}}" wx:key="{{head.name}}">
-      <navigator>
+    <view class='head-box' wx:for="{{head}}" wx:key="{{head.name}}" bindtap='kong'>
         <view class='image-box'>
           <image src='{{item.url}}'></image>
         </view>
         <view class='text-box'>
           <text>{{item.name}}</text>
         </view>
-      </navigator>
     </view>
   </view>
   <view class='mainbody'>
-    <view class='hot-box' wx:for="{{mainbody}}" wx:key="{{mainbody.name}}">
+    <view class='hot-box' wx:for="{{mainbody}}" wx:key="{{mainbody.name}}" bindtap='kong'>
      <view class='line'></view>
-      <navigator>
         <view class='hotimg-box'>
           <image src='{{item.url}}'></image>
         </view>
@@ -27,7 +24,6 @@
             <text>{{item.name}}</text>
           </view>
         </view>
-      </navigator>
        
     </view>
   </view>

@@ -12,8 +12,7 @@
     <view class='userma'></view>
   </view>
   <view class='mainline'></view>
-  <view class='mipin'>
-    <navigator>
+  <view class='mipin' bindtap='kong'>
       <view class='detail-box'>
         <view class='icon-box'>
           <image src='{{mipinicon}}'></image>
@@ -25,13 +24,11 @@
           <text>{{state}}</text>
         </view>
       </view>
-    </navigator>
   </view>
   <view class='mainline'></view>
   <view class='maindetail'>
     <view wx:for="{{maindetail}}" wx:key="{{maindetail.url}}">
-      <navigator>
-        <view class='detail-box'>
+        <view class='detail-box' bindtap='kong'>
           <view class='icon-box'>
             <image src='{{item.url}}'></image>
           </view>
@@ -39,14 +36,12 @@
             <text>{{item.title}}</text>
           </view>
         </view>
-      </navigator>
       <view class='line'></view>
     </view>
   </view>
   <view class='mainline'></view>
   <view class='setting'>
-    <navigator>
-      <view class='detail-box'>
+      <view class='detail-box' bindtap='kong'>
         <view class='icon-box'>
           <image src='{{settingicon}}'></image>
         </view>
@@ -54,7 +49,6 @@
           <text>{{settingtitle}}</text>
         </view>
       </view>
-    </navigator>
   </view>
 
 </view>

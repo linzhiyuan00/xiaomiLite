@@ -1,0 +1,28 @@
+/* components/kong/kong.wxss */
+.main{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #e0e0e0;
+}
+.kongimg{
+  position: absolute;
+  top: 200rpx;
+  left: 225rpx;
+  right: 225rpx;
+  bottom: 0;
+  width: 300rpx;
+  height: 300rpx;
+}
+.kongimg image{
+  width: 100%;
+  height: 100%;
+}
+.kongtext{
+  position: absolute;
+  top: 600rpx;
+  left: 250rpx;
+  line-height: 80rpx;
+  font-size: 40rpx;
+  color: #66ff00;
+}

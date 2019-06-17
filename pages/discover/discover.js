@@ -43,6 +43,13 @@ Page({
     ]
 
   },
+  kong(){
+    wx.showToast({
+      title: '页面溜了...',
+      image:'/images/system-icon/huaji.png',
+      duration:1000
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

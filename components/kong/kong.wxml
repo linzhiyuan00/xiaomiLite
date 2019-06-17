@@ -1,0 +1,9 @@
+<!--components/kong/kong.wxml-->
+<view class='main'>
+  <view class='kongimg'>
+    <image src='/images/system-icon/huaji.png'></image>
+  </view>
+  <view class='kongtext'>
+    <text>页面跑丢了哟...</text>
+  </view>
+</view>

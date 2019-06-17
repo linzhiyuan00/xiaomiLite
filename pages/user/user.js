@@ -32,6 +32,14 @@ Page({
       },
     ]
   },
+  kong(){
+    wx.showToast({
+      title: '页面偷偷溜了哟',
+      icon:'/images/system-icon/huaji.png',
+      image:'/images/system-icon/huaji.png',
+      duration:1000
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

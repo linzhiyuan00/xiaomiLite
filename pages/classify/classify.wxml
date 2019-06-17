@@ -17,13 +17,11 @@
           <text>{{item.title}}</text>
         </view>
         <view class='product'>
-          <view class='product-list' wx:for="{{item.detail}}" wx:for-item="product" wx:key="{{index}}">
-            <navigator>
+          <view class='product-list' wx:for="{{item.detail}}" wx:for-item="product" wx:key="{{index}}" bindtap='toDetail'>
               <image src='{{product.url}}'></image>
               <view class='product-name'>
                 <text>{{product.name}}</text>
               </view>
-            </navigator>
           </view>
         </view>
       </view>
