@@ -39,8 +39,23 @@ Page({
     clsgoods:[]
     
   },
-  toDetail(){
-    
+  getindex(e){
+    console.log(e)
+    wx.setStorageSync('classifyindex', e.currentTarget.dataset.index1)
+  },
+  toDetail(e){
+    var index1 = wx.getStorageSync('classifyindex');
+    console.log(index1)
+    var index2 = e.currentTarget.dataset.index2;
+    console.log(e.currentTarget);
+    let detail = this.data.clsgoods[index1].detail[index2];
+    app.goodsdetail = detail;
+    console.log(app.goodsdetail);
+
+
+    wx.navigateTo({
+      url: '/pages/goods/goods',
+    })
   },
   switchTab(e) {
     // console.log(e);

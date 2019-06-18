@@ -76,6 +76,10 @@ page,.main{
 }
 .product-list .product-name{
   color: #666666;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
 }
 .product-list:nth-child(3n){
     margin-right: 0;

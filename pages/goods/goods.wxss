@@ -129,3 +129,27 @@
 .buy .buy1{
     background: rgb(221, 73, 54);
 }
+
+.weizhi{
+  position: absolute;
+  top: 20rpx;
+  left: 500rpx;
+  right: 0;
+  bottom: 0;
+  width: 200rpx;
+  height: 40rpx;
+}
+.weizhi button{
+  height: 100%;
+  width: 200rpx;
+  background: #ffffff;
+  color: #d8d8d8;
+  font-size: 30rpx;
+  line-height: 35rpx;
+}
+.locationname{
+  margin-top: 10rpx;
+  margin-left: 50rpx;
+  font-size: 22rpx;
+  color: #cc3300;
+}
