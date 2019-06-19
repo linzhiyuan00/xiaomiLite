@@ -41,7 +41,7 @@ App({
     //获取设备顶部窗口的高度（不同设备窗口高度不一样，根据这个来设置自定义导航栏的高度）
     wx.getSystemInfo({
       success: (res) => {
-        console.log("555555")
+        // console.log("555555")
         this.globalData.height = res.statusBarHeight
       }
     })

@@ -44,18 +44,24 @@ Page({
     wx.setStorageSync('classifyindex', e.currentTarget.dataset.index1)
   },
   toDetail(e){
-    var index1 = wx.getStorageSync('classifyindex');
-    console.log(index1)
+    
     var index2 = e.currentTarget.dataset.index2;
     console.log(e.currentTarget);
-    let detail = this.data.clsgoods[index1].detail[index2];
-    app.goodsdetail = detail;
-    console.log(app.goodsdetail);
+    setTimeout((e) =>{
+      var index1 = wx.getStorageSync('classifyindex');
+      console.log('getindex');
+      console.log(index1)
+      
+      let detail = this.data.clsgoods[index1].detail[index2];
+      app.goodsdetail = detail;
+      console.log(app.goodsdetail);
 
 
-    wx.navigateTo({
-      url: '/pages/goods/goods',
-    })
+      wx.navigateTo({
+        url: '/pages/goods/goods',
+      })
+    },500)
+    
   },
   switchTab(e) {
     // console.log(e);
