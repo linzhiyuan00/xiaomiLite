@@ -12,18 +12,18 @@
   </view>
   <scroll-view class='classify-right' scroll-y scroll-into-view="{{toView}}" scroll-with-animation="{{scrollanimation}}" bindscroll="scroll">
     <block wx:for="{{clsgoods}}" wx:key="{{item.title}}">
-      <view class='classify-box' id='{{item.id}}'  data-index1="{{index}}" bindtap="getindex">
+      <view class='classify-box' id='{{item.id}}'  data-index1="{{index}}" bindtap="getindex" id="{{item.id}}">
         <view class="classify-title">
           <text>{{item.title}}</text>
         </view>
-        <view class='product'>
-          <view class='product-list' wx:for="{{item.detail}}" wx:for-item="product" wx:key="{{index}}" bindtap='toDetail' data-index2="{{index}}">
+        <!-- <view class='product'> -->
+          <view class='product-list' wx:for="{{item.detail}}" wx:for-item="product" wx:key="{{index}}" bindtap='toDetail' data-index2="{{index}}" data-id='{{item.id}}'>
               <image src='{{product.url}}'></image>
               <view class='product-name'>
                 <text>{{product.goodsname}}</text>
               </view>
           </view>
-        </view>
+        <!-- </view> -->
       </view>
     </block>
   </scroll-view>

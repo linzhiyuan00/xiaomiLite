@@ -60,15 +60,18 @@ Page({
   toDetail(e){
     // this.getindex1();
     var index2 = e.currentTarget.dataset.index2;
-    this.getindex1(index2).then(()=>{console.log(this.data.index1)})
+    console.log(e.currentTarget.dataset.id);
+    var id = e.currentTarget.dataset.id;
+    var dd = this.data.clsgoods.find(item =>item.id === id);
+    // this.getindex1(index2).then(()=>{console.log(this.data.index1)})
     console.log('------',index2)
     const that = this.data
-    setTimeout(()=>{
+    // setTimeout(()=>{
       function getindex2() {
         return new Promise((resolve, reject) => {
           var index1 = wx.getStorageSync('classifyindex');
-          console.log('index1:', index1, 'index2:', index2);
-          let detail = that.clsgoods[index1].detail[index2];
+          // console.log('index1:', index1, 'index2:', index2);
+          let detail = dd.detail[index2];
           app.goodsdetail = detail;
           console.log(app.goodsdetail);
           resolve(index1)
@@ -84,7 +87,7 @@ Page({
 
           }
         )
-    },300)
+    // },300)
     
   },
   switchTab(e) {
