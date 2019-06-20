@@ -36,31 +36,55 @@ Page({
     isScroll: true,
     scrollanimation:true,
     toView: 'xinpin',
-    clsgoods:[]
+    clsgoods:[],
+    // index1:0
     
   },
-  getindex(e){
-    console.log(e)
-    wx.setStorageSync('classifyindex', e.currentTarget.dataset.index1)
+   getindex(e){
+     var data = e.currentTarget.dataset.index1;
+     wx.setStorageSync('classifyindex', data)
+    //  this.getindex1(data);
+    // this.setData({
+    //   index1:data
+    // })
+  },
+  getindex1:function(index2){ 
+    let that = this
+    return new Promise((reslove,reject)=>{
+      that.setData({
+        index2
+      })
+      reslove(index2)
+    })
   },
   toDetail(e){
-    
+    // this.getindex1();
     var index2 = e.currentTarget.dataset.index2;
-    console.log(e.currentTarget);
-    setTimeout((e) =>{
-      var index1 = wx.getStorageSync('classifyindex');
-      console.log('getindex');
-      console.log(index1)
-      
-      let detail = this.data.clsgoods[index1].detail[index2];
-      app.goodsdetail = detail;
-      console.log(app.goodsdetail);
+    this.getindex1(index2).then(()=>{console.log(this.data.index1)})
+    console.log('------',index2)
+    const that = this.data
+    setTimeout(()=>{
+      function getindex2() {
+        return new Promise((resolve, reject) => {
+          var index1 = wx.getStorageSync('classifyindex');
+          console.log('index1:', index1, 'index2:', index2);
+          let detail = that.clsgoods[index1].detail[index2];
+          app.goodsdetail = detail;
+          console.log(app.goodsdetail);
+          resolve(index1)
+        })
 
+      }
+      getindex2()
+        .then(
+          function (index1) {
+            wx.navigateTo({
+              url: '/pages/goods/goods',
+            })
 
-      wx.navigateTo({
-        url: '/pages/goods/goods',
-      })
-    },500)
+          }
+        )
+    },300)
     
   },
   switchTab(e) {
