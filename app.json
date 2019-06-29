@@ -15,7 +15,8 @@
     "pages/index/huanxin/huanxin",
     "pages/index/pintuan/pintuan",
     "pages/index/zhenxuan/zhenxuan",
-    "pages/goods/goods"
+    "pages/goods/goods",
+    "pages/index/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",

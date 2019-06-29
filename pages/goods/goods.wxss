@@ -153,3 +153,98 @@
   font-size: 22rpx;
   color: #cc3300;
 }
+.weui-cell__bd image{
+  position:relative;
+  height: 40rpx;
+  width: 40rpx;
+}
+.weui-cell__bd text{
+  line-height: 40rpx;
+  font-size: 32rpx;
+}
+
+/* 规则提示层 */
+.isShow{
+  display: block;
+}
+.isHide{
+  display: none;
+}
+.showZhezhao{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color:rgba(0, 0, 0, .5);
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+.showZhezhaoContent{
+  width: 100%;
+  background: #f8f8f8;
+  margin: 30% auto;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.showZhezhaoText{
+  width: 90%;
+  font-size: 30rpx;
+  color: #484848;
+  flex-direction: row;
+  align-items: center;
+  margin: 25rpx 0 25rpx 0;
+}
+
+.showHide{
+  width: 100%;
+  background: #ff6700;
+}
+.show{
+  display: block;
+  border: 1px solid #fff;
+  width: 100rpx;
+  text-align: center;
+  line-height: 60rpx;
+  color: #fff;
+  height: 60rpx;
+  font-size: 30rpx;
+  border-radius: 30rpx;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+}
+.showtitle{
+  width: 100%;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color: #303030;
+}
+.line{
+  width: 100%;
+  height: 2rpx;
+  background: #b8b8b8;
+  margin-bottom: 20rpx;
+}
+.showdetail{
+  width: 100%;
+}
+.showbox{
+  line-height: 40rpx;
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+}
+.showbox image{
+  height: 35rpx;
+  width: 35rpx;
+
+}
+.showboxdetail{
+  padding:20rpx 0 0 40rpx;
+  width: 90%;
+  font-size: 28rpx;
+  color: #b0b0b0;
+}

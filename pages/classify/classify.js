@@ -99,7 +99,7 @@ Page({
   },
   scroll(e) {
     // console.log(e.detail.scrollTop)
-    let index = Math.floor(e.detail.scrollTop / 400);
+    let index = Math.floor(e.detail.scrollTop / 500);
     this.setData({
       curIndex: index
     })

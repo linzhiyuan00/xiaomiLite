@@ -18,6 +18,20 @@ Page({
     address:''
 
   },
+  //打开规则提示
+  showexplain: function () {
+    this.setData({
+      isshowTrue: true
+    })
+  },
+  //关闭规则提示
+  hideRule: function () {
+    this.setData({
+      isshowTrue: false
+    })
+  },
+
+
   // 选择位置
   selectLocation: function(e) { //自行定义tap事件
     var that = this

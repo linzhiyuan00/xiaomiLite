@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class='main'>
   <view class='search'>
-    <navigator>
+    <navigator url='/pages/index/search/search' hover-class='other-navigator-hover'>
       <view class='searchmain'>
         <view class='searchicon'>
           <icon color='#b2b2b2' size='30rpx' type='search'></icon>

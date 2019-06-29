@@ -1,69 +1,108 @@
 <!--pages/goods/goods.wxml-->
-<view class="page"  >
-    <view >
-    <view class="page_hd" >
-        <swiper class="section" indicator-dots="true" indicator-active-color="#fff" autoplay="true" interval="4000" duration="500">
-            <block>
-                <swiper-item>
-                    <image src="{{goodsdetail.url}}" />
-                </swiper-item>
-            </block>
-        </swiper>
+<view class="page">
+  <view>
+    <view class="page_hd">
+      <swiper class="section" indicator-dots="true" indicator-active-color="#fff" autoplay="true" interval="4000" duration="500">
+        <block>
+          <swiper-item>
+            <image src="{{goodsdetail.url}}" />
+          </swiper-item>
+        </block>
+      </swiper>
     </view>
     <view class="page_bd">
-        <view class="title">{{goodsdetail.goodsname}}</view>
-        <view class="desc">{{goodsdetail.goodsspecial}}</view>
-        <view class="pric">￥{{goodsdetail.goodsprice}}</view>
+      <view class="title">{{goodsdetail.goodsname}}</view>
+      <view class="desc">{{goodsdetail.goodsspecial}}</view>
+      <view class="pric">￥{{goodsdetail.goodsprice}}</view>
     </view>
-</view>
-    <view class="page_fd ">
-        <view class="weui-cells">
-            <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="myorder/myorder">
-                <view class="weui-cell__bd">送至 
-                <view class='locationname'>
-                 {{address}}
+  </view>
+  <view class="page_fd ">
+    <view class="weui-cells">
+      <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="myorder/myorder">
+        <view class="weui-cell__bd">送至
+          <view class='locationname'>
+            {{address}}
+          </view>
+          <view class='weizhi'>
+            <button class='weizhibutton' bindtap='selectLocation'>选择位置</button>
+          </view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+      <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="myCoupon/myCoupon">
+        <view class="weui-cell__bd">已选</view>
+        <view class="weui-cell__ft  weui-cell__ft_in-access"></view>
+      </navigator>
+      <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="#">
+        <view class="weui-cell__bd" bindtap='showexplain'>
+          <image src="/images/system-icon/gou.png"></image>
+          <text>小米自营</text>
+          <image src="/images/system-icon/gou.png"></image>
+          <text>7天无理由退货</text>
+        </view>
+
+        <view class="showZhezhao {{isshowTrue?'isShow':'isHide'}}">
+          <view class='showZhezhaoContent'>
+            <view class='showZhezhaoText'>
+              <view class='showtitle'>服务说明</view>
+              <view class='line'></view>
+              <view class='showdetail'>
+                <view class='showbox'>
+                  <image src='/images/system-icon/gou.png'></image>
+                  小米自营
                 </view>
-               <view class='weizhi'>
-                <button class='weizhibutton' bindtap='selectLocation'>选择位置</button>
-               </view>
+                <view class='showbox'>
+                  <image src='/images/system-icon/gou.png'></image>
+                  小米发货
+                  <view class='showboxdetail'>由小米发货</view>
                 </view>
-                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-            </navigator>
-            <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="myCoupon/myCoupon">
-                <view class="weui-cell__bd">已选</view>
-                <view class="weui-cell__ft  weui-cell__ft_in-access"></view>
-            </navigator>
-             <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="myCoupon/myCoupon">
-                <view class="weui-cell__bd">-----参数</view>
-                <view class="weui-cell__ft  weui-cell__ft_in-access"></view>
-            </navigator>
+                <view class='showbox'>
+                  <image src='/images/system-icon/gou.png'></image>
+                  7天无理由退货
+                </view>
+                <view class='showbox'>
+                  <image src='/images/system-icon/gou.png'></image>
+                  运费说明
+                  <view class='showboxdetail'>由小米发货的商品，单笔满150免运费；</view>
+                  <view class='showboxdetail'>由第三方商家发货的商品，免运费；</view>
+                  <view class='showboxdetail'>特殊商品需要单独收取运费，具体以实际结算金额为准；</view>
+                  <view class='showboxdetail'>优惠券不能抵扣运费金额；</view>
+                </view>
+              </view>
+
+            </view>
+            <button class='showHide' bindtap='hideRule'>完成</button>
+          </view>
         </view>
+
+        <view class="weui-cell__ft  weui-cell__ft_in-access"></view>
+      </navigator>
     </view>
-    <view class="say">
-        <view class="top">
-            <text class="left">用户评价</text>
-            <text class="right">查看全部评价</text>  
-        </view>     
-        <view>
-            <image class="personImg" src="{{person.personImg}}"/>
-            <text class="Nickname">{{person.nickname}}</text>
-            <view class="content">{{person.content}}</view>
-        </view>
+  </view>
+  <view class="say">
+    <view class="top">
+      <text class="left">用户评价</text>
+      <text class="right">查看全部评价</text>
     </view>
-    <view class="goodsdesc">
-        <text class="desc">概述</text>
-        <text class="canshu">参数</text>
+    <view>
+      <image class="personImg" src="{{person.personImg}}" />
+      <text class="Nickname">{{person.nickname}}</text>
+      <view class="content">{{person.content}}</view>
     </view>
-    <view class="buy">
-        <view class="image">
-            <image src="../../images/system-icon/goodscarton.png"/>
-        </view>
-        <text class="order" bindtap="addcart">
+  </view>
+  <view class="goodsdesc">
+    <text class="desc">概述</text>
+    <text class="canshu">参数</text>
+  </view>
+  <view class="buy">
+    <view class="image">
+      <image src="../../images/system-icon/goodscarton.png" />
+    </view>
+    <text class="order" bindtap="addcart">
             加入购物车
         </text>
-        <text class="buy1">
+    <text class="buy1">
             立即购买
         </text>
-    </view>
+  </view>
 </view>
-

@@ -19,10 +19,10 @@ height: 100%;
   overflow: hidden;
 }
 .searchmain{
-  /* height: 50rpx; */
+  height: 60rpx;
   overflow: hidden;
   background-color: #ffffff;
-  margin: 15rpx 25rpx;
+  margin: 10rpx 25rpx;
   border-radius: 50rpx;
 }
 .searchicon{
