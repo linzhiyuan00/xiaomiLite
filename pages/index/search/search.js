@@ -1,11 +1,38 @@
 // pages/index/search/search.js
+const app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    inputValue:'',
+    searchgoods:[]
+  },
 
+  bindKeyInput: function (e) {
+    this.setData({
+      inputValue: e.detail.value
+    })
+    wx.request({
+      url: `https://www.easy-mock.com/mock/5d030bd22c61271f2b41de46/search?goodsname=${e.detail.value}`,
+      success: (res) => {
+        console.log(res.data.data)
+        this.setData({
+          searchgoods:res.data.data
+        })
+      }
+    })
+  },
+  toDetail:function(e){
+    var index = e.currentTarget.dataset.index;
+    console.log(index);
+    app.goodsdetail = this.data.searchgoods[index];
+
+    wx.navigateTo({
+      url: '/pages/goods/goods',
+    })
   },
 
   /**

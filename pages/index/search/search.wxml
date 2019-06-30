@@ -1,2 +1,19 @@
 <!--pages/index/search/search.wxml-->
-<text>pages/index/search/search.wxml</text>
+<view class='main'>
+  <view class='inputbox'>
+    <input class="input" maxlength="10" bindinput="bindKeyInput" placeholder="输入关键词" />
+  </view>
+  <view class='goodslist'>
+    <view class='goodsbox' wx:for="{{searchgoods}}" wx:key="{{index}}" bindtap='toDetail' data-index="{{index}}">
+    <view class='goodsimage'>
+     <image src="{{item.url}}"></image>
+    </view>
+     <view class='goodstext'>
+     <text>{{item.goodsname}}</text>
+     </view>
+        
+
+    </view>
+  </view>
+
+</view>
