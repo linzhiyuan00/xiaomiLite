@@ -70,6 +70,7 @@ swiper-item image{
   margin: 35rpx 20rpx 10rpx 20rpx;
 }
 .classify-text{
+  line-height: 25rpx;
   font-size: 25rpx;
 }
 .mainpage{

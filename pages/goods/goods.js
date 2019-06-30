@@ -18,14 +18,14 @@ Page({
     address:''
 
   },
-  //打开规则提示
+  //打开说明
   showexplain: function () {
     this.setData({
       isshowTrue: true
     })
   },
-  //关闭规则提示
-  hideRule: function () {
+  //关闭
+  hideshow: function () {
     this.setData({
       isshowTrue: false
     })
@@ -36,10 +36,10 @@ Page({
   selectLocation: function(e) { //自行定义tap事件
     var that = this
     wx.chooseLocation({ //微信API--打开地图选择位置。
-      success: function(res) { //成功之后，目前只返回这四组参数
-        console.log(res.address) 
+      success: function(res) { //成功之后，返回四组参数
+        console.log(res.address)  
         that.setData({
-            address: res.address
+            address: res.address     // 我这里只返回了详细地址
         })
         wx.setStorageSync('address', res.address)
       },

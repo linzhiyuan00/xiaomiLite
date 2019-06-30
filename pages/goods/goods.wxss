@@ -102,8 +102,6 @@
     position: fixed;
     bottom: 0;
     width: 100%;   
-    display: inline-block;
-    display: flex;
     background: #FFF;
     border-top: 0.5rpx solid rgb(201, 199, 199);
     box-sizing: border-box

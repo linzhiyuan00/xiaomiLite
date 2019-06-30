@@ -10,7 +10,7 @@ Page({
     inputValue:'',
     searchgoods:[]
   },
-
+  //获取输入框输入的关键词匹配搜索数据
   bindKeyInput: function (e) {
     this.setData({
       inputValue: e.detail.value
@@ -25,6 +25,7 @@ Page({
       }
     })
   },
+  
   toDetail:function(e){
     var index = e.currentTarget.dataset.index;
     console.log(index);

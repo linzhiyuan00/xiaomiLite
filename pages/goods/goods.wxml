@@ -71,7 +71,7 @@
               </view>
 
             </view>
-            <button class='showHide' bindtap='hideRule'>完成</button>
+            <button class='showHide' bindtap='hideshow'>完成</button>
           </view>
         </view>
 

@@ -43,40 +43,22 @@ Page({
    getindex(e){
      var data = e.currentTarget.dataset.index1;
      wx.setStorageSync('classifyindex', data)
-    //  this.getindex1(data);
-    // this.setData({
-    //   index1:data
-    // })
-  },
-  getindex1:function(index2){ 
-    let that = this
-    return new Promise((reslove,reject)=>{
-      that.setData({
-        index2
-      })
-      reslove(index2)
-    })
   },
   toDetail(e){
-    // this.getindex1();
     var index2 = e.currentTarget.dataset.index2;
     console.log(e.currentTarget.dataset.id);
     var id = e.currentTarget.dataset.id;
     var dd = this.data.clsgoods.find(item =>item.id === id);
-    // this.getindex1(index2).then(()=>{console.log(this.data.index1)})
     console.log('------',index2)
     const that = this.data
-    // setTimeout(()=>{
       function getindex2() {
         return new Promise((resolve, reject) => {
           var index1 = wx.getStorageSync('classifyindex');
-          // console.log('index1:', index1, 'index2:', index2);
           let detail = dd.detail[index2];
           app.goodsdetail = detail;
           console.log(app.goodsdetail);
           resolve(index1)
         })
-
       }
       getindex2()
         .then(
@@ -87,18 +69,15 @@ Page({
 
           }
         )
-    // },300)
     
   },
-  switchTab(e) {
-    // console.log(e);
+  scrollleft(e) {
     this.setData({
       toView: e.target.dataset.id,
       curIndex: e.target.dataset.index
     })
   },
-  scroll(e) {
-    // console.log(e.detail.scrollTop)
+  scrollright(e) {
     let index = Math.floor(e.detail.scrollTop / 500);
     this.setData({
       curIndex: index

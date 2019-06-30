@@ -6,11 +6,11 @@
 
 <view class='main'>
   <scroll-view class='classify-left'>
-    <view wx:for="{{classify}}" wx:key="{{classify.id}}" data-id='{{item.id}}' data-index='{{index}}' bindtap='switchTab' class="classify-list {{curIndex == index ?'on':'' }}">
+    <view wx:for="{{classify}}" wx:key="{{classify.id}}" data-id='{{item.id}}' data-index='{{index}}' bindtap='scrollleft' class="classify-list {{curIndex == index ?'on':'' }}">
       {{item.name}}
     </view>
   </scroll-view>
-  <scroll-view class='classify-right' scroll-y scroll-into-view="{{toView}}" scroll-with-animation="{{scrollanimation}}" bindscroll="scroll">
+  <scroll-view class='classify-right' scroll-y scroll-into-view="{{toView}}" scroll-with-animation="{{scrollanimation}}" bindscroll="scrollright">
     <block wx:for="{{clsgoods}}" wx:key="{{item.title}}">
       <view class='classify-box' id='{{item.id}}'  data-index1="{{index}}" bindtap="getindex" id="{{item.id}}">
         <view class="classify-title">
